@@ -24,6 +24,14 @@
 .DS_Store
 *.pem
 
+# Claude Code internal files
+CLAUDE.md
+AGENTS.md
+.claude/
+
+# Planning / guide documents
+ictihat-bolumu-rehberi.md
+
 # debug
 npm-debug.log*
 yarn-debug.log*

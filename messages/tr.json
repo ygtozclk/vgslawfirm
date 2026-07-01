@@ -1,0 +1,153 @@
+{
+  "nav": {
+    "home": "Anasayfa",
+    "about": "Hakkımızda",
+    "practiceAreas": "Çalışma Alanları",
+    "team": "Ekibimiz",
+    "publications": "Yayınlar",
+    "contact": "İletişim",
+    "cta": "Görüşme Talep Et"
+  },
+  "home": {
+    "heroEyebrow": "ANKARA · HUKUKİ DANIŞMANLIK",
+    "heroHeading": "Kurumsal hizmet anlayışıyla hukuki çözümler",
+    "heroSub": "Özel hukuk, kamu hukuku, ceza hukuku ve KVKK alanlarında danışmanlık.",
+    "heroCta": "İletişim",
+    "heroCtaSecondary": "Çalışma Alanları",
+    "introHeading": "Hukuki meselelerde kurumsal ve sonuç odaklı hizmet",
+    "introParagraph": "VGS Hukuk & Danışmanlık; hukuki meseleleri kurumsal bir hizmet anlayışıyla, eksiksiz ve sonuç odaklı biçimde çözüme kavuşturmayı ilke edinmiş bir avukatlık bürosudur. İhtiyaçları önceden belirleyerek olası uyuşmazlıkların önüne geçmeyi ve müvekkillerimize hızlı, kapsamlı çözümler sunmayı hedefliyoruz.",
+    "practiceAreasHeading": "Çalışma Alanları",
+    "practiceAreasSub": "Dört temel alanda uzman hukuki destek",
+    "quoteText": "Kalpten daha güzel konuşan bir avukat yoktur.",
+    "quoteAuthor": "Sylvain Maréchal",
+    "quoteYear": "1788",
+    "recentDecisionsHeading": "Güncel Yargı Kararları",
+    "ctaHeading": "Hukuki konularda bilgi için iletişime geçebilirsiniz.",
+    "ctaSub": "Sorularınız için adres, telefon ve e-posta bilgilerimize iletişim sayfamızdan ulaşabilirsiniz.",
+    "ctaButton": "İletişim Bilgileri"
+  },
+  "about": {
+    "heading": "Hakkımızda",
+    "intro": "VGS Hukuk & Danışmanlık; alanlarında uzman hukukçular ve destek ekibinden oluşan, hukuki meseleleri kurumsal hizmet anlayışıyla sonuçlandırmayı amaçlayan bir avukatlık bürosudur. Hizmetlerimizin temel amacı; ulusal ve uluslararası ihtiyaçları önceden belirlemek, ortaya çıkan ihtiyaçları karşılamak ve sonradan doğabilecek uyuşmazlıkların önüne geçmektir.",
+    "visionHeading": "Vizyonumuz",
+    "vision": "Müvekkillerimize sunduğumuz çözüm odaklı ve erişilebilir hizmetin yanı sıra, kalitenin sürekliliğini sağlamak çalışma ilkelerimizin temelini oluşturur. İhtiyaçları önceden öngörerek olası uyuşmazlıkları önlemeyi hedefleriz.",
+    "missionHeading": "Misyonumuz",
+    "mission": "Değişen ihtiyaçları gözeterek müvekkillerimizin hukuki sorun ve taleplerini hızlı, kapsamlı ve eksiksiz çözümlerle sonuçlandırmak; sürekli ve sürdürülebilir gelişim ilkesiyle kapsamlı bir danışmanlık hizmeti sunmaktır.",
+    "readyHeading": "Hizmete Hazırız",
+    "ready": "Hukuki danışmanlık ve iş takibine ilişkin taleplerinizi; profesyonel ekibimiz, iş ortaklarımız ve avukatlarımızla en verimli biçimde karşılamaktan memnuniyet duyarız.",
+    "seoTitle": "Hakkımızda | VGS Hukuk & Danışmanlık",
+    "seoDescription": "VGS Hukuk & Danışmanlık'ın vizyonu, misyonu ve çalışma ilkeleri. Alanında uzman hukukçularla kurumsal, sonuç odaklı ve erişilebilir hukuki hizmet."
+  },
+  "practiceAreas": {
+    "heading": "Çalışma Alanları",
+    "sub": "Dört temel hukuk alanında uzman danışmanlık ve avukatlık hizmetleri.",
+    "seoTitle": "Çalışma Alanları | VGS Hukuk & Danışmanlık",
+    "seoDescription": "Özel hukuk, kamu hukuku, ceza hukuku ve KVKK alanlarında dava ve danışmanlık hizmetleri. VGS Hukuk & Danışmanlık ile kapsamlı hukuki destek.",
+    "learnMore": "Daha Fazla Bilgi"
+  },
+  "team": {
+    "heading": "Ekibimiz",
+    "sub": "Alanında uzman avukatlarımızla tanışın.",
+    "seoTitle": "Ekibimiz | VGS Hukuk & Danışmanlık",
+    "seoDescription": "VGS Hukuk & Danışmanlık ekibi. Alanında uzman avukatlarımızla tanışın.",
+    "education": "Eğitim",
+    "languages": "Diller",
+    "practiceAreas": "Çalışma Alanları",
+    "bar": "Baro",
+    "phone": "Telefon",
+    "email": "E-posta",
+    "linkedin": "LinkedIn"
+  },
+  "publications": {
+    "heading": "Yayınlar",
+    "sub": "Avukatlarımızın güncel mevzuat ve uygulamaya ilişkin değerlendirmeleri.",
+    "seoTitle": "Yayınlar | VGS Hukuk & Danışmanlık",
+    "seoDescription": "VGS Hukuk & Danışmanlık avukatlarının hukuki makale ve değerlendirmeleri. Güncel mevzuat ve uygulamaya dair içerikler.",
+    "readMore": "Devamını Oku",
+    "by": "Yazar:",
+    "publishedAt": "Yayın Tarihi:"
+  },
+  "contact": {
+    "heading": "İletişim",
+    "seoTitle": "İletişim | VGS Hukuk & Danışmanlık | Ankara",
+    "seoDescription": "VGS Hukuk & Danışmanlık ile iletişime geçin. Strazburg Cad. 16/24 Sıhhiye, Çankaya/Ankara. Telefon ve e-posta ile bize ulaşın.",
+    "address": "Adres",
+    "phone": "Telefon",
+    "email": "E-posta",
+    "addressValue": "Strazburg Cad. No: 16/24, Sıhhiye, Çankaya / Ankara 06430",
+    "formHeading": "Mesaj Gönderin",
+    "fieldName": "Ad Soyad",
+    "fieldEmail": "E-posta",
+    "fieldPhone": "Telefon",
+    "fieldSubject": "Konu",
+    "fieldMessage": "Mesaj",
+    "kvkkConsent": "Kişisel verilerimin işlenmesine ilişkin",
+    "kvkkLink": "Aydınlatma Metni",
+    "kvkkConsentSuffix": "'ni okudum ve kabul ediyorum.",
+    "submitButton": "Gönder",
+    "successMessage": "Mesajınız alındı. En kısa sürede sizinle iletişime geçeceğiz.",
+    "errorMessage": "Bir hata oluştu. Lütfen daha sonra tekrar deneyin.",
+    "required": "Bu alan zorunludur.",
+    "invalidEmail": "Geçerli bir e-posta adresi giriniz.",
+    "kvkkRequired": "Devam etmek için aydınlatma metnini kabul etmelisiniz."
+  },
+  "kvkk": {
+    "heading": "Kişisel Verilerin Korunması — Aydınlatma Metni",
+    "seoTitle": "KVKK Aydınlatma Metni | VGS Hukuk & Danışmanlık",
+    "seoDescription": "VGS Hukuk & Danışmanlık kişisel verilerin korunmasına ilişkin aydınlatma metni.",
+    "draftNotice": "Bu sayfa taslak niteliğindedir ve avukatlar tarafından nihai onaya tabi tutulmadan önce tamamlanmalıdır.",
+    "sections": {
+      "controller": "Veri Sorumlusu",
+      "purposes": "İşleme Amaçları",
+      "legalBasis": "Hukuki Dayanak",
+      "recipients": "Alıcı Grupları",
+      "retention": "Saklama Süresi",
+      "rights": "İlgili Kişi Hakları (KVKK md. 11)",
+      "contact": "Başvuru Yöntemi"
+    }
+  },
+  "cookies": {
+    "heading": "Çerez Politikası",
+    "seoTitle": "Çerez Politikası | VGS Hukuk & Danışmanlık",
+    "seoDescription": "VGS Hukuk & Danışmanlık çerez politikası.",
+    "draftNotice": "Bu sayfa taslak niteliğindedir ve avukatlar tarafından nihai onaya tabi tutulmadan önce tamamlanmalıdır.",
+    "sections": {
+      "whatAreCookies": "Çerez Nedir?",
+      "typesUsed": "Kullandığımız Çerezler",
+      "thirdParty": "Üçüncü Taraf Çerezleri",
+      "management": "Çerez Yönetimi",
+      "contact": "İletişim"
+    }
+  },
+  "cookieBanner": {
+    "message": "Bu web sitesi, işlevsellik ve analiz için çerezler kullanmaktadır.",
+    "learnMore": "Çerez Politikası",
+    "accept": "Kabul Et",
+    "decline": "Reddet"
+  },
+  "footer": {
+    "description": "Ankara merkezli, ulusal ve uluslararası ölçekte hukuki danışmanlık bürosu.",
+    "quickLinks": "Hızlı Bağlantılar",
+    "legalLinks": "Yasal",
+    "kvkkNotice": "KVKK Aydınlatma Metni",
+    "cookiePolicy": "Çerez Politikası",
+    "copyright": "© 2025 VGS Hukuk & Danışmanlık. Tüm hakları saklıdır."
+  },
+  "ictihat": {
+    "heading": "Yargı Kararları",
+    "sub": "SGK ilaç uyuşmazlıkları ve sosyal güvenlik hukukuna ilişkin Yargıtay kararlarının anonim özetleri — genel bilgilendirme amaçlıdır.",
+    "seoTitle": "Yargı Kararları | VGS Hukuk & Danışmanlık",
+    "seoDescription": "SGK ilaç uyuşmazlıkları ve sosyal güvenlik hukukuna ilişkin Yargıtay kararlarının anonim özetleri. Genel bilgilendirme amaçlıdır; hukuki danışmanlık niteliği taşımaz.",
+    "readMore": "Kararı İncele",
+    "relatedDecisions": "İlgili Yargı Kararları",
+    "allDecisions": "Tüm Kararlar"
+  },
+  "breadcrumbs": {
+    "home": "Anasayfa"
+  },
+  "meta": {
+    "siteTitle": "VGS Hukuk & Danışmanlık",
+    "seoTitle": "VGS Hukuk & Danışmanlık | Ankara Avukatlık ve Hukuki Danışmanlık",
+    "seoDescription": "Ankara merkezli VGS Hukuk & Danışmanlık; özel hukuk, kamu hukuku, ceza hukuku ve KVKK alanlarında kurumsal hizmet anlayışıyla ulusal ve uluslararası hukuki danışmanlık sunar."
+  }
+}

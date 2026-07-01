@@ -1,0 +1,153 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "practiceAreas": "Practice Areas",
+    "team": "Our Team",
+    "publications": "Publications",
+    "contact": "Contact",
+    "cta": "Request a Consultation"
+  },
+  "home": {
+    "heroEyebrow": "ANKARA · LEGAL CONSULTANCY",
+    "heroHeading": "Legal solutions with a corporate service approach",
+    "heroSub": "Legal consultancy in private law, public law, criminal law, and data protection.",
+    "heroCta": "Contact",
+    "heroCtaSecondary": "Practice Areas",
+    "introHeading": "Corporate and results-oriented legal service",
+    "introParagraph": "VGS Law & Consultancy is a law firm committed to resolving legal matters comprehensively and with results, applying a corporate service approach. We aim to anticipate needs in advance, prevent potential disputes, and deliver fast, comprehensive solutions to our clients.",
+    "practiceAreasHeading": "Practice Areas",
+    "practiceAreasSub": "Expert legal support across four core areas",
+    "quoteText": "There is no lawyer who speaks more beautifully than the heart.",
+    "quoteAuthor": "Sylvain Maréchal",
+    "quoteYear": "1788",
+    "recentDecisionsHeading": "Recent Court Decisions",
+    "ctaHeading": "For legal information, please get in touch.",
+    "ctaSub": "You can find our address, telephone and email on the contact page.",
+    "ctaButton": "Contact Information"
+  },
+  "about": {
+    "heading": "About Us",
+    "intro": "VGS Law & Consultancy is a law firm composed of specialist attorneys and support staff, dedicated to resolving legal matters under a corporate service approach. Our primary objective is to identify national and international needs in advance, meet emerging needs, and prevent future disputes.",
+    "visionHeading": "Our Vision",
+    "vision": "In addition to the solution-oriented and accessible service we provide to our clients, ensuring the continuity of quality forms the foundation of our working principles. We aim to anticipate needs and prevent potential disputes.",
+    "missionHeading": "Our Mission",
+    "mission": "To resolve our clients' legal problems and requests with fast, comprehensive, and complete solutions; to provide comprehensive consultancy under a principle of continuous, sustainable development.",
+    "readyHeading": "Ready to Serve",
+    "ready": "We are pleased to address your legal consultancy and case management needs in the most efficient manner through our professional team, business partners, and attorneys.",
+    "seoTitle": "About Us | VGS Law & Consultancy",
+    "seoDescription": "The vision, mission and working principles of VGS Law & Consultancy. Corporate, results-oriented, and accessible legal service with specialist attorneys."
+  },
+  "practiceAreas": {
+    "heading": "Practice Areas",
+    "sub": "Expert consultancy and representation across four core areas of law.",
+    "seoTitle": "Practice Areas | VGS Law & Consultancy",
+    "seoDescription": "Litigation and consultancy in private law, public law, criminal law, and KVKK. Comprehensive legal support with VGS Law & Consultancy.",
+    "learnMore": "Learn More"
+  },
+  "team": {
+    "heading": "Our Team",
+    "sub": "Meet our specialist attorneys.",
+    "seoTitle": "Our Team | VGS Law & Consultancy",
+    "seoDescription": "The team at VGS Law & Consultancy. Meet our specialist attorneys.",
+    "education": "Education",
+    "languages": "Languages",
+    "practiceAreas": "Practice Areas",
+    "bar": "Bar",
+    "phone": "Phone",
+    "email": "Email",
+    "linkedin": "LinkedIn"
+  },
+  "publications": {
+    "heading": "Publications",
+    "sub": "Legal analysis and commentary by our attorneys on current legislation and practice.",
+    "seoTitle": "Publications | VGS Law & Consultancy",
+    "seoDescription": "Legal articles and commentary by VGS Law & Consultancy attorneys on current legislation and practice.",
+    "readMore": "Read More",
+    "by": "By:",
+    "publishedAt": "Published:"
+  },
+  "contact": {
+    "heading": "Contact",
+    "seoTitle": "Contact | VGS Law & Consultancy | Ankara",
+    "seoDescription": "Contact VGS Law & Consultancy. Strazburg Cad. 16/24 Sıhhiye, Çankaya/Ankara. Reach us by phone or email.",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "addressValue": "Strazburg Cad. No: 16/24, Sıhhiye, Çankaya / Ankara 06430",
+    "formHeading": "Send a Message",
+    "fieldName": "Full Name",
+    "fieldEmail": "Email",
+    "fieldPhone": "Phone",
+    "fieldSubject": "Subject",
+    "fieldMessage": "Message",
+    "kvkkConsent": "I have read and accept the",
+    "kvkkLink": "Privacy Notice",
+    "kvkkConsentSuffix": "regarding the processing of my personal data.",
+    "submitButton": "Send",
+    "successMessage": "Your message has been received. We will get back to you as soon as possible.",
+    "errorMessage": "An error occurred. Please try again later.",
+    "required": "This field is required.",
+    "invalidEmail": "Please enter a valid email address.",
+    "kvkkRequired": "You must accept the privacy notice to continue."
+  },
+  "kvkk": {
+    "heading": "Personal Data Protection — Privacy Notice",
+    "seoTitle": "Privacy Notice (KVKK) | VGS Law & Consultancy",
+    "seoDescription": "Privacy notice regarding the protection of personal data at VGS Law & Consultancy.",
+    "draftNotice": "This page is a draft and must be completed and approved by the attorneys before it is made final.",
+    "sections": {
+      "controller": "Data Controller",
+      "purposes": "Processing Purposes",
+      "legalBasis": "Legal Basis",
+      "recipients": "Recipients",
+      "retention": "Retention Period",
+      "rights": "Data Subject Rights (Art. 11 KVKK)",
+      "contact": "How to Submit a Request"
+    }
+  },
+  "cookies": {
+    "heading": "Cookie Policy",
+    "seoTitle": "Cookie Policy | VGS Law & Consultancy",
+    "seoDescription": "Cookie policy of VGS Law & Consultancy.",
+    "draftNotice": "This page is a draft and must be completed and approved by the attorneys before it is made final.",
+    "sections": {
+      "whatAreCookies": "What Are Cookies?",
+      "typesUsed": "Cookies We Use",
+      "thirdParty": "Third-Party Cookies",
+      "management": "Cookie Management",
+      "contact": "Contact"
+    }
+  },
+  "cookieBanner": {
+    "message": "This website uses cookies for functionality and analytics.",
+    "learnMore": "Cookie Policy",
+    "accept": "Accept",
+    "decline": "Decline"
+  },
+  "footer": {
+    "description": "Ankara-based law firm providing national and international legal consultancy.",
+    "quickLinks": "Quick Links",
+    "legalLinks": "Legal",
+    "kvkkNotice": "Privacy Notice",
+    "cookiePolicy": "Cookie Policy",
+    "copyright": "© 2025 VGS Law & Consultancy. All rights reserved."
+  },
+  "ictihat": {
+    "heading": "Court Decisions",
+    "sub": "Anonymised summaries of Court of Cassation decisions on SGK drug reimbursement disputes and social security law — for general information only.",
+    "seoTitle": "Court Decisions | VGS Law & Consultancy",
+    "seoDescription": "Anonymised summaries of Court of Cassation decisions on SGK drug reimbursement and social security law. For general information only; not legal advice.",
+    "readMore": "View Decision",
+    "relatedDecisions": "Related Court Decisions",
+    "allDecisions": "All Decisions"
+  },
+  "breadcrumbs": {
+    "home": "Home"
+  },
+  "meta": {
+    "siteTitle": "VGS Law & Consultancy",
+    "seoTitle": "VGS Law & Consultancy | Legal Advisory in Ankara",
+    "seoDescription": "VGS Law & Consultancy, based in Ankara, provides national and international legal advisory in private law, public law, criminal law, and KVKK with a corporate service approach."
+  }
+}
