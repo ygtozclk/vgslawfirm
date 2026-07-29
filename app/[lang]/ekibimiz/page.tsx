@@ -42,7 +42,7 @@ export default async function EkibimizPage({
 
   return (
     <>
-      <section className="bg-navy-900 px-6 pt-32 pb-20" aria-labelledby="team-heading">
+      <section className="bg-night-900 px-6 pt-32 md:pt-44 pb-20" aria-labelledby="team-heading">
         <div className="mx-auto max-w-6xl">
           <Breadcrumbs
             crumbs={[
@@ -58,7 +58,7 @@ export default async function EkibimizPage({
           >
             {d.heading}
           </h1>
-          <p className="mt-4 text-body text-slate">{d.sub}</p>
+          <p className="mt-4 text-body text-mist-2">{d.sub}</p>
         </div>
       </section>
 

@@ -6,7 +6,7 @@ interface PullQuoteProps {
 
 export default function PullQuote({ quote, author, year }: PullQuoteProps) {
   return (
-    <section className="bg-navy-900 py-20 px-6" aria-label="Alıntı">
+    <section className="bg-night-900 py-20 px-6" aria-label="Alıntı">
       <div className="mx-auto max-w-3xl text-center">
         <span
           className="block font-heading text-7xl leading-none text-gold-500 select-none mb-2"

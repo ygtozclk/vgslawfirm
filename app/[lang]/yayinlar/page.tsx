@@ -52,7 +52,7 @@ export default async function YayinlarPage({
   return (
     <>
       {/* Page hero */}
-      <section className="bg-navy-900 px-6 pt-32 pb-20" aria-labelledby="pub-heading">
+      <section className="bg-night-900 px-6 pt-32 md:pt-44 pb-20" aria-labelledby="pub-heading">
         <div className="mx-auto max-w-6xl">
           <Breadcrumbs
             crumbs={[
@@ -68,7 +68,7 @@ export default async function YayinlarPage({
           >
             {d.heading}
           </h1>
-          <p className="mt-4 max-w-2xl text-body text-slate leading-relaxed">{d.sub}</p>
+          <p className="mt-4 max-w-2xl text-body text-mist-2 leading-relaxed">{d.sub}</p>
         </div>
       </section>
 

@@ -11,7 +11,7 @@ interface BreadcrumbsProps {
 }
 
 export default function Breadcrumbs({ crumbs, light = false }: BreadcrumbsProps) {
-  const textColor = light ? 'text-slate' : 'text-slate'
+  const textColor = light ? 'text-mist-2' : 'text-slate'
   const activeColor = light ? 'text-paper' : 'text-ink'
 
   return (

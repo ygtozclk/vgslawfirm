@@ -20,7 +20,7 @@ export default function IctihatCard({ ictihat, locale, readMoreLabel }: IctihatC
 
   return (
     <article className="group relative flex flex-col overflow-hidden rounded-sm border border-paper-2 bg-paper shadow-sm transition-all duration-200 hover:shadow-md hover:-translate-y-0.5">
-      <div className="h-0.5 w-full bg-navy-700" aria-hidden="true" />
+      <div className="h-0.5 w-full bg-night-700" aria-hidden="true" />
       <div className="flex flex-1 flex-col p-7">
         <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-slate">
           {ictihat.daire}
@@ -30,7 +30,7 @@ export default function IctihatCard({ ictihat, locale, readMoreLabel }: IctihatC
           {ictihat.etiketler.slice(0, 2).map((tag) => (
             <span
               key={tag}
-              className="rounded-full border border-navy-700/20 bg-paper-2 px-2.5 py-0.5 text-xs font-medium text-navy-800"
+              className="rounded-full border border-night-700/20 bg-paper-2 px-2.5 py-0.5 text-xs font-medium text-night-800"
             >
               {tag}
             </span>

@@ -1,17 +1,14 @@
 import Link from 'next/link'
 import type { Dictionary } from '@/lib/i18n'
+import { site } from '@/lib/site'
+import VgsLogo from './VgsLogo'
 
 interface FooterProps {
   locale: string
   dict: Dictionary
 }
 
-const firmName = 'VGS Hukuk & Danışmanlık'
-const address = 'Strazburg Cad. No: 16/24, Sıhhiye, Çankaya / Ankara 06430'
-const phone1 = '+90 312 231 6975'
-const phone2 = '+90 539 659 5584'
-const email = 'lawfirmvgs@gmail.com'
-const linkedin = 'https://linkedin.com/company/vgshukuk'
+const { name: firmName, address, phone1, phone2, email, linkedin } = site
 
 export default function Footer({ locale, dict }: FooterProps) {
   const nav = dict.nav
@@ -32,34 +29,26 @@ export default function Footer({ locale, dict }: FooterProps) {
   ]
 
   return (
-    <footer className="bg-navy-900 text-paper">
+    <footer className="bg-night-900 text-paper">
       <div className="mx-auto max-w-7xl px-6 py-16">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link
               href={`/${locale}`}
-              className="inline-flex flex-col gap-1 text-paper hover:text-gold-300 transition-colors"
+              className="inline-block transition-opacity hover:opacity-80"
               aria-label={`${firmName} — Anasayfa`}
             >
-              <span
-                className="text-2xl font-bold tracking-wide"
-                style={{ fontFamily: 'var(--font-heading)' }}
-              >
-                VGS
-              </span>
-              <span className="text-xs font-light uppercase tracking-widest text-slate">
-                Hukuk & Danışmanlık
-              </span>
+              <VgsLogo className="h-20 w-auto" wordmark="#FFFFFF" />
             </Link>
-            <p className="mt-4 text-sm text-slate leading-relaxed">
+            <p className="mt-4 text-sm text-mist-2 leading-relaxed">
               {footer.description}
             </p>
             <a
               href={linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-5 inline-flex items-center gap-2 text-sm text-slate hover:text-gold-500 transition-colors"
+              className="mt-5 inline-flex items-center gap-2 text-sm text-mist-2 hover:text-gold-500 transition-colors"
               aria-label="LinkedIn'de takip edin"
             >
               <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -79,7 +68,7 @@ export default function Footer({ locale, dict }: FooterProps) {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-slate hover:text-gold-300 transition-colors"
+                    className="text-sm text-mist-2 hover:text-gold-300 transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -98,7 +87,7 @@ export default function Footer({ locale, dict }: FooterProps) {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-slate hover:text-gold-300 transition-colors"
+                    className="text-sm text-mist-2 hover:text-gold-300 transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -112,7 +101,7 @@ export default function Footer({ locale, dict }: FooterProps) {
             <h3 className="mb-5 text-xs font-semibold uppercase tracking-widest text-gold-500">
               {locale === 'en' ? 'Contact' : 'İletişim'}
             </h3>
-            <address className="flex flex-col gap-3 not-italic text-sm text-slate">
+            <address className="flex flex-col gap-3 not-italic text-sm text-mist-2">
               <span className="leading-relaxed">{address}</span>
               <a href={`tel:${phone1.replace(/\s/g, '')}`} className="hover:text-gold-300 transition-colors">
                 {phone1}
@@ -123,24 +112,19 @@ export default function Footer({ locale, dict }: FooterProps) {
               <a href={`mailto:${email}`} className="hover:text-gold-300 transition-colors break-all">
                 {email}
               </a>
-              <p className="mt-1 text-xs text-navy-700 leading-tight">
-                {locale === 'en'
-                  ? '⚠ Please confirm the canonical email address before launch.'
-                  : '⚠ Yayın öncesinde kanonik e-posta adresi teyit edilmelidir.'}
-              </p>
             </address>
           </div>
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-navy-800 pt-8 sm:flex-row">
-          <p className="text-xs text-slate">{footer.copyright}</p>
+        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-night-800 pt-8 sm:flex-row">
+          <p className="text-xs text-mist-2">© {new Date().getFullYear()} {footer.copyright}</p>
           <div className="flex items-center gap-4">
             {legalLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-xs text-slate hover:text-gold-300 transition-colors"
+                className="text-xs text-mist-2 hover:text-gold-300 transition-colors"
               >
                 {link.label}
               </Link>

@@ -40,7 +40,7 @@ export default function CookieBanner({ locale, dict }: CookieBannerProps) {
       role="dialog"
       aria-live="polite"
       aria-label={locale === 'en' ? 'Cookie consent' : 'Çerez izni'}
-      className="fixed bottom-0 left-0 right-0 z-50 border-t border-navy-700 bg-navy-900 px-6 py-5 shadow-2xl sm:bottom-6 sm:left-6 sm:right-auto sm:max-w-sm sm:rounded-sm sm:border"
+      className="fixed bottom-0 left-0 right-0 z-50 border-t border-night-700 bg-night-900 px-6 py-5 shadow-2xl sm:bottom-6 sm:left-6 sm:right-auto sm:max-w-sm sm:rounded-sm sm:border"
     >
       <p className="text-sm text-paper/90 leading-relaxed">
         {dict.message}{' '}
@@ -54,13 +54,13 @@ export default function CookieBanner({ locale, dict }: CookieBannerProps) {
       <div className="mt-4 flex gap-3">
         <button
           onClick={accept}
-          className="flex-1 rounded-sm bg-gold-500 px-4 py-2 text-sm font-semibold text-navy-900 transition-colors hover:bg-gold-300"
+          className="flex-1 rounded-sm bg-gold-500 px-4 py-2 text-sm font-semibold text-night-900 transition-colors hover:bg-gold-300"
         >
           {dict.accept}
         </button>
         <button
           onClick={decline}
-          className="flex-1 rounded-sm border border-navy-700 px-4 py-2 text-sm font-medium text-slate transition-colors hover:border-gold-500 hover:text-paper"
+          className="flex-1 rounded-sm border border-night-700 px-4 py-2 text-sm font-medium text-mist transition-colors hover:border-gold-500 hover:text-paper"
         >
           {dict.decline}
         </button>

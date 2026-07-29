@@ -40,14 +40,14 @@ export default function ArticleCard({
             {article.categories.slice(0, 3).map((cat) => (
               <span
                 key={cat}
-                className="rounded-full bg-navy-900 px-3 py-1 text-xs font-medium text-gold-500"
+                className="rounded-full bg-night-900 px-3 py-1 text-xs font-medium text-gold-500"
               >
                 {cat}
               </span>
             ))}
           </div>
           <h2
-            className="text-h2 font-semibold text-ink leading-tight group-hover:text-navy-800 transition-colors"
+            className="text-h2 font-semibold text-ink leading-tight group-hover:text-night-800 transition-colors"
             style={{ fontFamily: 'var(--font-heading)' }}
           >
             <Link href={href} className="after:absolute after:inset-0">
@@ -68,7 +68,7 @@ export default function ArticleCard({
             <span aria-hidden="true">·</span>
             <span>{readingMin}</span>
           </div>
-          <div className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-navy-900 group-hover:text-gold-500 transition-colors" aria-hidden="true">
+          <div className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-night-900 group-hover:text-gold-500 transition-colors" aria-hidden="true">
             {readMoreLabel}
             <svg className="h-4 w-4 transition-transform duration-150 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -88,7 +88,7 @@ export default function ArticleCard({
           {article.categories.slice(0, 2).map((cat) => (
             <span
               key={cat}
-              className="rounded-full border border-navy-700/20 bg-paper-2 px-2.5 py-0.5 text-xs font-medium text-navy-800"
+              className="rounded-full border border-night-700/20 bg-paper-2 px-2.5 py-0.5 text-xs font-medium text-night-800"
             >
               {cat}
             </span>

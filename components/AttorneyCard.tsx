@@ -17,9 +17,9 @@ export default function AttorneyCard({ attorney, locale, dict }: AttorneyCardPro
   return (
     <article className="rounded-sm border border-paper-2 bg-paper overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-200">
       {/* Header */}
-      <div className="bg-navy-800 px-8 py-10">
+      <div className="bg-night-800 px-8 py-10">
         <div
-          className="mx-auto mb-4 h-16 w-16 rounded-full bg-navy-700 flex items-center justify-center"
+          className="mx-auto mb-4 h-16 w-16 rounded-full bg-night-700 flex items-center justify-center"
           aria-hidden="true"
         >
           <span className="text-2xl font-semibold text-gold-500" style={{ fontFamily: 'var(--font-heading)' }}>

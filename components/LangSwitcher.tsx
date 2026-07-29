@@ -23,7 +23,7 @@ export default function LangSwitcher({ locale }: LangSwitcherProps) {
         className={`px-2 py-1 rounded-sm transition-colors ${
           locale === 'tr'
             ? 'text-gold-500'
-            : 'text-slate hover:text-paper'
+            : 'text-mist-2 hover:text-paper'
         }`}
         aria-current={locale === 'tr' ? 'true' : undefined}
         lang="tr"
@@ -31,13 +31,13 @@ export default function LangSwitcher({ locale }: LangSwitcherProps) {
       >
         TR
       </Link>
-      <span className="text-navy-700" aria-hidden="true">|</span>
+      <span className="text-night-700" aria-hidden="true">|</span>
       <Link
         href={getAlternateHref('en')}
         className={`px-2 py-1 rounded-sm transition-colors ${
           locale === 'en'
             ? 'text-gold-500'
-            : 'text-slate hover:text-paper'
+            : 'text-mist-2 hover:text-paper'
         }`}
         aria-current={locale === 'en' ? 'true' : undefined}
         lang="en"

@@ -1,24 +1,17 @@
 'use client'
 
 import Link from 'next/link'
-import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
 import LangSwitcher from './LangSwitcher'
 import MobileNav from './MobileNav'
+import VgsLogo from './VgsLogo'
 import type { Dictionary } from '@/lib/i18n'
 
 interface HeaderProps {
   locale: string
   dict: Dictionary['nav']
 }
-
-const practiceAreaSlugs = [
-  'ozel-hukuk',
-  'kamu-hukuku',
-  'ceza-hukuku',
-  'kvkk',
-]
 
 export default function Header({ locale, dict }: HeaderProps) {
   const pathname = usePathname()
@@ -33,44 +26,45 @@ export default function Header({ locale, dict }: HeaderProps) {
   }, [])
 
   const isActive = (href: string) => pathname === href || pathname.startsWith(href + '/')
-  const isPracticeAreaPage = practiceAreaSlugs.some((slug) =>
-    pathname.includes(`/calisma-alanlari`)
-  )
-
-  const navLinks = [
-    { href: `/${locale}`, label: dict.home },
-    { href: `/${locale}/hakkimizda`, label: dict.about },
-    { href: `/${locale}/ekibimiz`, label: dict.team },
-    { href: `/${locale}/yayinlar`, label: dict.publications },
-    { href: `/${locale}/iletisim`, label: dict.contact },
-  ]
+  const isPracticeAreaPage = pathname.includes('/calisma-alanlari')
 
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 overflow-visible transition-all duration-300 ${
         scrolled
-          ? 'bg-navy-900/98 shadow-lg shadow-black/20 backdrop-blur-sm'
-          : 'bg-navy-900/80 backdrop-blur-sm'
+          ? 'bg-night-900/98 shadow-lg shadow-black/20 backdrop-blur-sm'
+          : 'border-b border-paper/10 bg-transparent'
       }`}
     >
-      <div className="relative mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
-        {/* Logo — overflowing below navbar */}
+      <div className="relative mx-auto flex h-16 max-w-7xl items-center justify-between px-6 md:h-20">
+        {/* Mobil: logo header içinde kalır */}
         <Link
           href={`/${locale}`}
-          className="absolute left-6 top-0 z-10 flex h-[88px] items-center justify-center px-4 transition-opacity hover:opacity-80"
+          className="flex items-center md:hidden"
           aria-label="VGS Hukuk & Danışmanlık — Anasayfa"
         >
-          <Image
-            src="/vgs-logo.png"
-            alt="VGS Hukuk & Danışmanlık"
-            width={200}
-            height={80}
-            priority
-            className="h-20 w-auto object-contain"
-          />
+          <VgsLogo className="h-12 w-auto" wordmark="#FFFFFF" />
+        </Link>
+
+        {/* Masaüstü: kapı plaketi — header alt çizgisini taşan lockup.
+            Scroll'da 200ms'de küçülüp header içine oturur. */}
+        <Link
+          href={`/${locale}`}
+          className="absolute left-6 top-0 z-10 hidden md:block transition-opacity hover:opacity-90"
+          aria-label="VGS Hukuk & Danışmanlık — Anasayfa"
+        >
+          <span
+            className="flex items-center justify-center transition-all duration-200 ease-out"
+            style={{
+              height: scrolled ? '64px' : 'clamp(88px, 11vw, 148px)',
+              marginTop: scrolled ? '8px' : '0px',
+            }}
+          >
+            <VgsLogo className="h-full w-auto" wordmark="#FFFFFF" />
+          </span>
         </Link>
         {/* Spacer to preserve flex layout for the absolute-positioned logo */}
-        <div className="w-44" aria-hidden="true" />
+        <div className="hidden w-[200px] md:block" aria-hidden="true" />
 
         {/* Desktop nav */}
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Ana navigasyon">
@@ -109,7 +103,7 @@ export default function Header({ locale, dict }: HeaderProps) {
               </svg>
             </Link>
             {paDropdown && (
-              <div className="absolute top-full left-0 mt-1 w-56 rounded-sm border border-navy-700 bg-navy-800 py-1 shadow-xl shadow-black/20">
+              <div className="absolute top-full left-0 mt-1 w-56 rounded-sm border border-night-700 bg-night-800 py-1 shadow-xl shadow-black/20">
                 {[
                   { slug: 'ozel-hukuk', label: locale === 'en' ? 'Private Law' : 'Özel Hukuk' },
                   { slug: 'kamu-hukuku', label: locale === 'en' ? 'Public Law' : 'Kamu Hukuku' },
@@ -119,7 +113,7 @@ export default function Header({ locale, dict }: HeaderProps) {
                   <Link
                     key={item.slug}
                     href={`/${locale}/calisma-alanlari/${item.slug}`}
-                    className="block px-4 py-2.5 text-sm text-paper/80 hover:bg-navy-700 hover:text-gold-300 transition-colors"
+                    className="block px-4 py-2.5 text-sm text-paper/80 hover:bg-night-700 hover:text-gold-300 transition-colors"
                   >
                     {item.label}
                   </Link>

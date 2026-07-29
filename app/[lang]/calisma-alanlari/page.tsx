@@ -42,7 +42,7 @@ export default async function CalısmaAlanlariPage({
 
   return (
     <>
-      <section className="bg-navy-900 px-6 pt-32 pb-20" aria-labelledby="pa-heading">
+      <section className="bg-night-900 px-6 pt-32 md:pt-44 pb-20" aria-labelledby="pa-heading">
         <div className="mx-auto max-w-7xl">
           <Breadcrumbs
             crumbs={[
@@ -58,11 +58,11 @@ export default async function CalısmaAlanlariPage({
           >
             {d.heading}
           </h1>
-          <p className="mt-4 max-w-2xl text-body text-slate">{d.sub}</p>
+          <p className="mt-4 max-w-2xl text-body text-mist-2">{d.sub}</p>
         </div>
       </section>
 
-      <section className="bg-navy-800 py-20 px-6">
+      <section className="bg-night-800 py-20 px-6">
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {practiceAreas.map((area) => (

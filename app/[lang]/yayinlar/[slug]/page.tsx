@@ -79,7 +79,7 @@ export default async function ArticleDetailPage({
       <ReadingProgress />
 
       {/* Page hero */}
-      <section className="bg-navy-900 px-6 pt-32 pb-12" aria-labelledby="article-heading">
+      <section className="bg-night-900 px-6 pt-32 md:pt-44 pb-12" aria-labelledby="article-heading">
         <div className="mx-auto max-w-4xl">
           <Breadcrumbs
             crumbs={[
@@ -96,7 +96,7 @@ export default async function ArticleDetailPage({
               {article.categories.map((cat) => (
                 <span
                   key={cat}
-                  className="rounded-full border border-navy-700 bg-navy-800 px-3 py-1 text-xs font-medium text-gold-500"
+                  className="rounded-full border border-night-700 bg-night-800 px-3 py-1 text-xs font-medium text-gold-500"
                 >
                   {cat}
                 </span>
@@ -130,7 +130,7 @@ export default async function ArticleDetailPage({
 
           {/* Abstract (if present) */}
           {content.abstract && (
-            <div className="mb-10 rounded-sm border border-navy-900/10 bg-paper-2 px-7 py-6">
+            <div className="mb-10 rounded-sm border border-night-900/10 bg-paper-2 px-7 py-6">
               <p className="text-xs font-semibold uppercase tracking-widest text-gold-500 mb-3">
                 {locale === 'en' ? 'Abstract' : 'Öz'}
               </p>
@@ -178,7 +178,7 @@ export default async function ArticleDetailPage({
           {/* Author byline */}
           <div className="mt-10 flex items-start gap-5 border-t border-paper-2 pt-8">
             <div
-              className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-navy-900 text-gold-500 text-lg font-semibold"
+              className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-night-900 text-gold-500 text-lg font-semibold"
               style={{ fontFamily: 'var(--font-heading)' }}
               aria-hidden="true"
             >

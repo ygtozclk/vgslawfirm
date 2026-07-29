@@ -35,20 +35,20 @@
     "mission": "To resolve our clients' legal problems and requests with fast, comprehensive, and complete solutions; to provide comprehensive consultancy under a principle of continuous, sustainable development.",
     "readyHeading": "Ready to Serve",
     "ready": "We are pleased to address your legal consultancy and case management needs in the most efficient manner through our professional team, business partners, and attorneys.",
-    "seoTitle": "About Us | VGS Law & Consultancy",
+    "seoTitle": "About Us",
     "seoDescription": "The vision, mission and working principles of VGS Law & Consultancy. Corporate, results-oriented, and accessible legal service with specialist attorneys."
   },
   "practiceAreas": {
     "heading": "Practice Areas",
     "sub": "Expert consultancy and representation across four core areas of law.",
-    "seoTitle": "Practice Areas | VGS Law & Consultancy",
+    "seoTitle": "Practice Areas",
     "seoDescription": "Litigation and consultancy in private law, public law, criminal law, and KVKK. Comprehensive legal support with VGS Law & Consultancy.",
     "learnMore": "Learn More"
   },
   "team": {
     "heading": "Our Team",
     "sub": "Meet our specialist attorneys.",
-    "seoTitle": "Our Team | VGS Law & Consultancy",
+    "seoTitle": "Our Team",
     "seoDescription": "The team at VGS Law & Consultancy. Meet our specialist attorneys.",
     "education": "Education",
     "languages": "Languages",
@@ -61,7 +61,7 @@
   "publications": {
     "heading": "Publications",
     "sub": "Legal analysis and commentary by our attorneys on current legislation and practice.",
-    "seoTitle": "Publications | VGS Law & Consultancy",
+    "seoTitle": "Publications",
     "seoDescription": "Legal articles and commentary by VGS Law & Consultancy attorneys on current legislation and practice.",
     "readMore": "Read More",
     "by": "By:",
@@ -69,7 +69,7 @@
   },
   "contact": {
     "heading": "Contact",
-    "seoTitle": "Contact | VGS Law & Consultancy | Ankara",
+    "seoTitle": "Contact | Ankara",
     "seoDescription": "Contact VGS Law & Consultancy. Strazburg Cad. 16/24 Sıhhiye, Çankaya/Ankara. Reach us by phone or email.",
     "address": "Address",
     "phone": "Phone",
@@ -93,7 +93,7 @@
   },
   "kvkk": {
     "heading": "Personal Data Protection — Privacy Notice",
-    "seoTitle": "Privacy Notice (KVKK) | VGS Law & Consultancy",
+    "seoTitle": "Privacy Notice (KVKK)",
     "seoDescription": "Privacy notice regarding the protection of personal data at VGS Law & Consultancy.",
     "draftNotice": "This page is a draft and must be completed and approved by the attorneys before it is made final.",
     "sections": {
@@ -108,7 +108,7 @@
   },
   "cookies": {
     "heading": "Cookie Policy",
-    "seoTitle": "Cookie Policy | VGS Law & Consultancy",
+    "seoTitle": "Cookie Policy",
     "seoDescription": "Cookie policy of VGS Law & Consultancy.",
     "draftNotice": "This page is a draft and must be completed and approved by the attorneys before it is made final.",
     "sections": {
@@ -131,12 +131,12 @@
     "legalLinks": "Legal",
     "kvkkNotice": "Privacy Notice",
     "cookiePolicy": "Cookie Policy",
-    "copyright": "© 2025 VGS Law & Consultancy. All rights reserved."
+    "copyright": "VGS Law & Consultancy. All rights reserved."
   },
   "ictihat": {
     "heading": "Court Decisions",
     "sub": "Anonymised summaries of Court of Cassation decisions on SGK drug reimbursement disputes and social security law — for general information only.",
-    "seoTitle": "Court Decisions | VGS Law & Consultancy",
+    "seoTitle": "Court Decisions",
     "seoDescription": "Anonymised summaries of Court of Cassation decisions on SGK drug reimbursement and social security law. For general information only; not legal advice.",
     "readMore": "View Decision",
     "relatedDecisions": "Related Court Decisions",

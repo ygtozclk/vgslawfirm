@@ -82,7 +82,7 @@ export default async function CerezPolitikasiPage({
 
   return (
     <>
-      <section className="bg-navy-900 px-6 pt-32 pb-20" aria-labelledby="cookie-heading">
+      <section className="bg-night-900 px-6 pt-32 md:pt-44 pb-20" aria-labelledby="cookie-heading">
         <div className="mx-auto max-w-4xl">
           <Breadcrumbs
             crumbs={[

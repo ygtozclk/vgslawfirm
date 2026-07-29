@@ -35,20 +35,20 @@
     "mission": "Değişen ihtiyaçları gözeterek müvekkillerimizin hukuki sorun ve taleplerini hızlı, kapsamlı ve eksiksiz çözümlerle sonuçlandırmak; sürekli ve sürdürülebilir gelişim ilkesiyle kapsamlı bir danışmanlık hizmeti sunmaktır.",
     "readyHeading": "Hizmete Hazırız",
     "ready": "Hukuki danışmanlık ve iş takibine ilişkin taleplerinizi; profesyonel ekibimiz, iş ortaklarımız ve avukatlarımızla en verimli biçimde karşılamaktan memnuniyet duyarız.",
-    "seoTitle": "Hakkımızda | VGS Hukuk & Danışmanlık",
+    "seoTitle": "Hakkımızda",
     "seoDescription": "VGS Hukuk & Danışmanlık'ın vizyonu, misyonu ve çalışma ilkeleri. Alanında uzman hukukçularla kurumsal, sonuç odaklı ve erişilebilir hukuki hizmet."
   },
   "practiceAreas": {
     "heading": "Çalışma Alanları",
     "sub": "Dört temel hukuk alanında uzman danışmanlık ve avukatlık hizmetleri.",
-    "seoTitle": "Çalışma Alanları | VGS Hukuk & Danışmanlık",
+    "seoTitle": "Çalışma Alanları",
     "seoDescription": "Özel hukuk, kamu hukuku, ceza hukuku ve KVKK alanlarında dava ve danışmanlık hizmetleri. VGS Hukuk & Danışmanlık ile kapsamlı hukuki destek.",
     "learnMore": "Daha Fazla Bilgi"
   },
   "team": {
     "heading": "Ekibimiz",
     "sub": "Alanında uzman avukatlarımızla tanışın.",
-    "seoTitle": "Ekibimiz | VGS Hukuk & Danışmanlık",
+    "seoTitle": "Ekibimiz",
     "seoDescription": "VGS Hukuk & Danışmanlık ekibi. Alanında uzman avukatlarımızla tanışın.",
     "education": "Eğitim",
     "languages": "Diller",
@@ -61,7 +61,7 @@
   "publications": {
     "heading": "Yayınlar",
     "sub": "Avukatlarımızın güncel mevzuat ve uygulamaya ilişkin değerlendirmeleri.",
-    "seoTitle": "Yayınlar | VGS Hukuk & Danışmanlık",
+    "seoTitle": "Yayınlar",
     "seoDescription": "VGS Hukuk & Danışmanlık avukatlarının hukuki makale ve değerlendirmeleri. Güncel mevzuat ve uygulamaya dair içerikler.",
     "readMore": "Devamını Oku",
     "by": "Yazar:",
@@ -69,7 +69,7 @@
   },
   "contact": {
     "heading": "İletişim",
-    "seoTitle": "İletişim | VGS Hukuk & Danışmanlık | Ankara",
+    "seoTitle": "İletişim | Ankara",
     "seoDescription": "VGS Hukuk & Danışmanlık ile iletişime geçin. Strazburg Cad. 16/24 Sıhhiye, Çankaya/Ankara. Telefon ve e-posta ile bize ulaşın.",
     "address": "Adres",
     "phone": "Telefon",
@@ -93,7 +93,7 @@
   },
   "kvkk": {
     "heading": "Kişisel Verilerin Korunması — Aydınlatma Metni",
-    "seoTitle": "KVKK Aydınlatma Metni | VGS Hukuk & Danışmanlık",
+    "seoTitle": "KVKK Aydınlatma Metni",
     "seoDescription": "VGS Hukuk & Danışmanlık kişisel verilerin korunmasına ilişkin aydınlatma metni.",
     "draftNotice": "Bu sayfa taslak niteliğindedir ve avukatlar tarafından nihai onaya tabi tutulmadan önce tamamlanmalıdır.",
     "sections": {
@@ -108,7 +108,7 @@
   },
   "cookies": {
     "heading": "Çerez Politikası",
-    "seoTitle": "Çerez Politikası | VGS Hukuk & Danışmanlık",
+    "seoTitle": "Çerez Politikası",
     "seoDescription": "VGS Hukuk & Danışmanlık çerez politikası.",
     "draftNotice": "Bu sayfa taslak niteliğindedir ve avukatlar tarafından nihai onaya tabi tutulmadan önce tamamlanmalıdır.",
     "sections": {
@@ -131,12 +131,12 @@
     "legalLinks": "Yasal",
     "kvkkNotice": "KVKK Aydınlatma Metni",
     "cookiePolicy": "Çerez Politikası",
-    "copyright": "© 2025 VGS Hukuk & Danışmanlık. Tüm hakları saklıdır."
+    "copyright": "VGS Hukuk & Danışmanlık. Tüm hakları saklıdır."
   },
   "ictihat": {
     "heading": "Yargı Kararları",
     "sub": "SGK ilaç uyuşmazlıkları ve sosyal güvenlik hukukuna ilişkin Yargıtay kararlarının anonim özetleri — genel bilgilendirme amaçlıdır.",
-    "seoTitle": "Yargı Kararları | VGS Hukuk & Danışmanlık",
+    "seoTitle": "Yargı Kararları",
     "seoDescription": "SGK ilaç uyuşmazlıkları ve sosyal güvenlik hukukuna ilişkin Yargıtay kararlarının anonim özetleri. Genel bilgilendirme amaçlıdır; hukuki danışmanlık niteliği taşımaz.",
     "readMore": "Kararı İncele",
     "relatedDecisions": "İlgili Yargı Kararları",

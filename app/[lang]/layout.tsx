@@ -35,7 +35,7 @@ export async function generateMetadata({
   const dict = await getDictionary(lang as Locale)
   return {
     title: {
-      default: dict.meta.siteTitle,
+      default: dict.meta.seoTitle,
       template: `%s | ${dict.meta.siteTitle}`,
     },
     description: dict.meta.seoDescription,

@@ -63,13 +63,13 @@ export default function ContactForm({ locale, dict }: ContactFormProps) {
   }
 
   const inputBase =
-    'w-full rounded-sm border border-navy-700/25 bg-white px-4 py-3 text-sm text-ink placeholder-slate/60 transition-colors focus:border-gold-500 focus:outline-none focus:ring-1 focus:ring-gold-500/50'
+    'w-full rounded-sm border border-night-700/25 bg-white px-4 py-3 text-sm text-ink placeholder-slate/60 transition-colors focus:border-gold-500 focus:outline-none focus:ring-1 focus:ring-gold-500/50'
   const inputError = 'border-red-400 focus:border-red-400 focus:ring-red-400/50'
   const labelBase = 'block text-xs font-semibold uppercase tracking-wider text-slate mb-2'
 
   if (status === 'success') {
     return (
-      <div className="rounded-sm border border-gold-500/30 bg-navy-900/5 p-10 text-center">
+      <div className="rounded-sm border border-gold-500/30 bg-night-900/5 p-10 text-center">
         <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-sm bg-gold-500/10">
           <svg className="h-6 w-6 text-gold-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5} aria-hidden="true">
             <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -188,7 +188,7 @@ export default function ContactForm({ locale, dict }: ContactFormProps) {
         <label className="flex cursor-pointer items-start gap-3">
           <input
             type="checkbox"
-            className="mt-0.5 h-4 w-4 rounded-sm border-navy-700/30 accent-gold-500 transition-colors focus:ring-gold-500 focus:ring-offset-0"
+            className="mt-0.5 h-4 w-4 rounded-sm border-night-700/30 accent-gold-500 transition-colors focus:ring-gold-500 focus:ring-offset-0"
             aria-invalid={!!errors.kvkk}
             aria-describedby={errors.kvkk ? 'kvkk-error' : undefined}
             {...register('kvkk')}
@@ -224,7 +224,7 @@ export default function ContactForm({ locale, dict }: ContactFormProps) {
       <button
         type="submit"
         disabled={status === 'loading'}
-        className="mt-2 inline-flex items-center justify-center gap-2 rounded-sm bg-gold-500 px-8 py-3.5 text-sm font-semibold text-navy-900 transition-colors duration-200 hover:bg-gold-300 disabled:cursor-not-allowed disabled:opacity-60 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-500"
+        className="mt-2 inline-flex items-center justify-center gap-2 rounded-sm bg-gold-500 px-8 py-3.5 text-sm font-semibold text-night-900 transition-colors duration-200 hover:bg-gold-300 disabled:cursor-not-allowed disabled:opacity-60 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-500"
       >
         {status === 'loading' ? (
           <>

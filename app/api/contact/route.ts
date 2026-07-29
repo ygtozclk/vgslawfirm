@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { z } from 'zod'
 import nodemailer from 'nodemailer'
+import { site } from '@/lib/site'
 
 const schema = z.object({
   name: z.string().min(1),
@@ -32,7 +33,7 @@ export async function POST(request: NextRequest) {
     const body = await request.json()
     const data = schema.parse(body)
 
-    const to = process.env.CONTACT_EMAIL ?? 'lawfirmvgs@gmail.com'
+    const to = process.env.CONTACT_EMAIL ?? site.email
     const transporter = buildTransporter()
 
     if (transporter) {

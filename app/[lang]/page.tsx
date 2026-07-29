@@ -21,7 +21,6 @@ export async function generateMetadata({
   if (!hasLocale(lang)) return {}
   const dict = await getDictionary(lang as Locale)
   return {
-    title: dict.meta.seoTitle,
     description: dict.meta.seoDescription,
     alternates: {
       canonical: `https://www.vgshukuk.com/${lang}`,
@@ -53,8 +52,8 @@ export default async function HomePage({
     <>
       {/* ── Hero ── */}
       <section
-        className="hero-premium relative isolate flex items-center px-6 pt-16"
-        style={{ minHeight: '90vh' }}
+        className="hero-premium relative isolate flex items-center px-6"
+        style={{ minHeight: '90vh', paddingTop: 'clamp(6rem, 12vw, 11rem)' }}
         aria-labelledby="hero-heading"
       >
         {/* Dikey çizgiler */}
@@ -62,26 +61,8 @@ export default async function HomePage({
         {/* Film grain */}
         <div className="hero-grain pointer-events-none absolute inset-0 opacity-[0.04]" aria-hidden="true" />
 
-        {/* İç içe altın kare motifi — sağ üst */}
-        <div
-          className="pointer-events-none absolute right-[8%] top-1/2 -translate-y-1/2 hidden xl:block"
-          aria-hidden="true"
-        >
-          <svg
-            width="260"
-            height="260"
-            viewBox="0 0 260 260"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect x="1"   y="1"   width="258" height="258" stroke="#C8A24B" strokeWidth="0.75" opacity="0.18" />
-            <rect x="30"  y="30"  width="200" height="200" stroke="#C8A24B" strokeWidth="0.75" opacity="0.11" />
-            <rect x="58"  y="58"  width="144" height="144" stroke="#C8A24B" strokeWidth="0.75" opacity="0.06" />
-          </svg>
-        </div>
-
         {/* İçerik */}
-        <div className="relative mx-auto w-full max-w-6xl py-24 md:py-32">
+        <div className="relative mx-auto w-full max-w-6xl py-16 md:py-20">
           <div className="max-w-[880px]">
             {/* Eyebrow */}
             <p
@@ -110,7 +91,7 @@ export default async function HomePage({
 
             {/* Alt metin */}
             <p
-              className="mt-[1.4rem] leading-relaxed text-paper/65"
+              className="mt-[1.4rem] leading-relaxed text-mist-2"
               style={{ fontSize: 'clamp(1.05rem, 1.6vw, 1.25rem)', maxWidth: '52ch' }}
             >
               {d.heroSub}
@@ -120,7 +101,7 @@ export default async function HomePage({
             <div className="mt-[1.8rem] flex flex-wrap gap-4">
               <Link
                 href={`/${locale}/iletisim`}
-                className="inline-flex items-center gap-2 rounded-sm bg-gold-500 px-[1.6rem] py-[0.9rem] text-[15px] font-semibold text-navy-900 transition-colors duration-200 hover:bg-gold-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-500"
+                className="inline-flex items-center gap-2 rounded-sm bg-gold-500 px-[1.6rem] py-[0.9rem] text-[15px] font-semibold text-night-900 transition-colors duration-200 hover:bg-gold-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-500"
               >
                 {d.heroCta}
               </Link>
@@ -136,7 +117,7 @@ export default async function HomePage({
             <div className="mt-14 flex flex-wrap items-center gap-x-3 gap-y-2 border-t border-paper/10 pt-6">
               {areaLabels.map((label, i) => (
                 <span key={label} className="flex items-center gap-3">
-                  <span className="text-[11px] uppercase tracking-wider text-paper/38">
+                  <span className="text-[11px] uppercase tracking-wider text-mist-2">
                     {label}
                   </span>
                   {i < areaLabels.length - 1 && (
@@ -172,7 +153,7 @@ export default async function HomePage({
 
       {/* ── Çalışma Alanları ── */}
       <section
-        className="bg-navy-900 px-6 py-[clamp(4rem,8vw,7rem)]"
+        className="bg-night-900 px-6 py-[clamp(4rem,8vw,7rem)]"
         aria-labelledby="practice-areas-heading"
       >
         <div className="mx-auto max-w-6xl">

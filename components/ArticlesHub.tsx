@@ -89,8 +89,8 @@ export default function ArticlesHub({
             onClick={() => { setActiveCategory(null); setQuery('') }}
             className={`rounded-full px-4 py-2 text-sm font-medium transition-all duration-150 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-500 ${
               activeCategory === null && !query
-                ? 'bg-navy-900 text-paper shadow-sm'
-                : 'border border-paper-2 bg-paper text-ink hover:border-navy-700 hover:text-navy-900'
+                ? 'bg-night-900 text-paper shadow-sm'
+                : 'border border-paper-2 bg-paper text-ink hover:border-night-700 hover:text-night-900'
             }`}
             aria-pressed={activeCategory === null && !query}
           >
@@ -102,8 +102,8 @@ export default function ArticlesHub({
               onClick={() => { setActiveCategory(activeCategory === cat ? null : cat); setQuery('') }}
               className={`rounded-full px-4 py-2 text-sm font-medium transition-all duration-150 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-500 ${
                 activeCategory === cat
-                  ? 'bg-gold-500 text-navy-900 shadow-sm'
-                  : 'border border-paper-2 bg-paper text-ink hover:border-gold-500 hover:text-navy-900'
+                  ? 'bg-gold-500 text-night-900 shadow-sm'
+                  : 'border border-paper-2 bg-paper text-ink hover:border-gold-500 hover:text-night-900'
               }`}
               aria-pressed={activeCategory === cat}
             >

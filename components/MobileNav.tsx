@@ -44,7 +44,7 @@ export default function MobileNav({ locale, dict }: MobileNavProps) {
     <>
       <button
         onClick={() => setOpen(!open)}
-        className="flex h-10 w-10 flex-col items-center justify-center gap-1.5 rounded-sm text-paper transition-colors hover:bg-navy-700 lg:hidden"
+        className="flex h-10 w-10 flex-col items-center justify-center gap-1.5 rounded-sm text-paper transition-colors hover:bg-night-700 lg:hidden"
         aria-label={open ? 'Menüyü kapat' : 'Menüyü aç'}
         aria-expanded={open}
         aria-controls="mobile-menu"
@@ -57,7 +57,7 @@ export default function MobileNav({ locale, dict }: MobileNavProps) {
       {open && (
         <div
           id="mobile-menu"
-          className="fixed inset-0 top-16 z-40 flex flex-col bg-navy-900 px-6 py-8 lg:hidden"
+          className="fixed inset-0 top-16 z-40 flex flex-col bg-night-900 px-6 py-8 lg:hidden"
           role="dialog"
           aria-modal="true"
           aria-label="Navigasyon menüsü"
@@ -68,7 +68,7 @@ export default function MobileNav({ locale, dict }: MobileNavProps) {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="block rounded-sm px-4 py-3 text-lg font-medium text-paper transition-colors hover:bg-navy-800 hover:text-gold-300"
+                    className="block rounded-sm px-4 py-3 text-lg font-medium text-paper transition-colors hover:bg-night-800 hover:text-gold-300"
                     onClick={() => setOpen(false)}
                   >
                     {link.label}
@@ -77,10 +77,10 @@ export default function MobileNav({ locale, dict }: MobileNavProps) {
               ))}
             </ul>
           </nav>
-          <div className="mt-8 border-t border-navy-700 pt-8">
+          <div className="mt-8 border-t border-night-700 pt-8">
             <Link
               href={`/${locale}/iletisim`}
-              className="block w-full rounded-sm border border-navy-700 px-6 py-3.5 text-center text-sm font-semibold text-paper transition-colors hover:bg-navy-800"
+              className="block w-full rounded-sm border border-night-700 px-6 py-3.5 text-center text-sm font-semibold text-paper transition-colors hover:bg-night-800"
               onClick={() => setOpen(false)}
             >
               {dict.contact}

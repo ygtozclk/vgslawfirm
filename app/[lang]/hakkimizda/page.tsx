@@ -72,7 +72,7 @@ export default async function HakkimizdaPage({
   return (
     <>
       {/* Page hero */}
-      <section className="bg-navy-900 px-6 pt-32 pb-20" aria-labelledby="about-heading">
+      <section className="bg-night-900 px-6 pt-32 md:pt-44 pb-20" aria-labelledby="about-heading">
         <div className="mx-auto max-w-6xl">
           <Breadcrumbs
             crumbs={[
@@ -88,7 +88,7 @@ export default async function HakkimizdaPage({
           >
             {d.heading}
           </h1>
-          <p className="mt-6 max-w-2xl text-body text-slate leading-relaxed">
+          <p className="mt-6 max-w-2xl text-body text-mist-2 leading-relaxed">
             {d.intro}
           </p>
         </div>
@@ -104,7 +104,7 @@ export default async function HakkimizdaPage({
             {values.map(({ icon, keyTr, bodyKey }, i) => (
               <FadeIn key={keyTr} delay={i * 80}>
                 <article className="rounded-sm bg-paper p-8 shadow-sm border-t-2 border-gold-500/30 hover:border-gold-500/70 transition-colors">
-                  <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-sm bg-navy-900 text-gold-500">
+                  <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-sm bg-night-900 text-gold-500">
                     {icon}
                   </div>
                   <h3

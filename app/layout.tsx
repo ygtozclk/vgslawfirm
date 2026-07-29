@@ -3,10 +3,6 @@ import './globals.css'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.vgshukuk.com'),
-  title: {
-    default: 'VGS Hukuk & Danışmanlık',
-    template: '%s | VGS Hukuk & Danışmanlık',
-  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

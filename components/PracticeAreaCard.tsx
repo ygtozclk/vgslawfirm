@@ -18,7 +18,7 @@ export default function PracticeAreaCard({
   return (
     <Link
       href={href}
-      className="group relative flex flex-col gap-4 rounded-sm border border-navy-700 bg-navy-800 p-8 transition-all duration-200 hover:-translate-y-1 hover:border-gold-500 hover:shadow-lg hover:shadow-black/20 focus-visible:outline-2 focus-visible:outline-gold-500"
+      className="group relative flex flex-col gap-4 rounded-sm border border-night-700 bg-night-800 p-8 transition-all duration-200 hover:-translate-y-1 hover:border-gold-500 hover:shadow-lg hover:shadow-black/20 focus-visible:outline-2 focus-visible:outline-gold-500"
     >
       <div className="h-0.5 w-10 bg-gold-500 transition-all duration-200 group-hover:w-14" aria-hidden="true" />
       <span
@@ -33,7 +33,7 @@ export default function PracticeAreaCard({
       >
         {content.title}
       </h3>
-      <p className="text-slate text-sm leading-relaxed flex-1">{content.shortDesc}</p>
+      <p className="text-mist-2 text-sm leading-relaxed flex-1">{content.shortDesc}</p>
       <span className="mt-2 inline-flex items-center gap-2 text-sm font-medium text-gold-500 transition-colors group-hover:text-gold-300">
         {learnMoreLabel}
         <svg

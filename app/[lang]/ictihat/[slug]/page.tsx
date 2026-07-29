@@ -96,7 +96,7 @@ function renderCourtText(text: string): ReactNode[] {
         return (
           <p
             key={i}
-            className="font-semibold text-navy-900 mt-6 mb-1.5 text-sm"
+            className="font-semibold text-night-900 mt-6 mb-1.5 text-sm"
             style={{ fontFamily: 'var(--font-heading)' }}
           >
             {inner}
@@ -152,7 +152,7 @@ export default async function IctihatDetailPage({
       <ReadingProgress />
 
       {/* ── Hero ── */}
-      <section className="bg-navy-900 px-6 pt-32 pb-12" aria-labelledby="ictihat-detail-heading">
+      <section className="bg-night-900 px-6 pt-32 md:pt-44 pb-12" aria-labelledby="ictihat-detail-heading">
         <div className="mx-auto max-w-4xl">
           <Breadcrumbs
             crumbs={[
@@ -172,7 +172,7 @@ export default async function IctihatDetailPage({
               {ictihat.etiketler.map((tag) => (
                 <span
                   key={tag}
-                  className="rounded-full border border-navy-700 bg-navy-800 px-3 py-1 text-xs font-medium text-gold-500"
+                  className="rounded-full border border-night-700 bg-night-800 px-3 py-1 text-xs font-medium text-gold-500"
                 >
                   {tag}
                 </span>
@@ -225,7 +225,7 @@ export default async function IctihatDetailPage({
                   <div>
                     <h2
                       id="tam-metin-heading"
-                      className="text-xs font-semibold uppercase tracking-widest text-navy-900"
+                      className="text-xs font-semibold uppercase tracking-widest text-night-900"
                     >
                       {labels.fullText}
                     </h2>
@@ -274,7 +274,7 @@ export default async function IctihatDetailPage({
           {ictihat.kararOzu && (
             <section
               aria-labelledby="karar-ozu-heading"
-              className="rounded-sm bg-navy-900 px-7 py-7"
+              className="rounded-sm bg-night-900 px-7 py-7"
             >
               <h2
                 id="karar-ozu-heading"
