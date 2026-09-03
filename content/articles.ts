@@ -32,6 +32,7 @@ export interface Article {
     seoTitle: string
     seoDescription: string
     faq?: ArticleFaqItem[]
+    merakEdilenler?: ArticleFaqItem[]
   }
   en: {
     title: string
@@ -41,6 +42,7 @@ export interface Article {
     seoTitle: string
     seoDescription: string
     faq?: ArticleFaqItem[]
+    merakEdilenler?: ArticleFaqItem[]
   }
 }
 
@@ -84,6 +86,33 @@ Orijinal makale içeriği buraya taşınmalıdır. Bu alan, ilacın SGK tarafın
       seoTitle: 'Enhertu (Trastuzumab Derukstekan) SGK Karşılama Süreci | VGS Hukuk',
       seoDescription:
         'Trastuzumab derukstekan (Enhertu) ilaç bedelinin SGK\'ca karşılanması için başvurulabilecek hukuki yollar, ihtiyati tedbir ve endikasyon dışı ilaç mevzuatı.',
+      merakEdilenler: [
+        {
+          question: 'Enhertu (Trastuzumab Derukstekan) SGK Başvurusu Dilekçesi Nasıl Hazırlanır?',
+          answer:
+            "Dilekçede hastanın HER2 durumunu ve önceki tedavi geçmişini gösteren sağlık kurulu raporu, varsa TİTCK endikasyon dışı kullanım onayı, SGK'ya yapılan ön başvuru ile alınan ret veya zımni ret yazısı yer almalıdır. Tedavinin aciliyeti nedeniyle dilekçeye ayrıca ihtiyati tedbir talebi de eklenmelidir.",
+        },
+        {
+          question: 'Enhertu Bedeli Nereden Temin Edilir?',
+          answer:
+            'Enhertu, SUT\'un EK-4/A listesinde yer almadığından hastane eczaneleri üzerinden standart reçeteyle temin edilememektedir; ilaç genellikle TİTCK\'nın yurt dışı ilaç temin mekanizması veya özel eczaneler aracılığıyla ithal edilerek hastaya ulaştırılmaktadır.',
+        },
+        {
+          question: 'Enhertu İçin Ödenen Bedel Geri Alınabilir mi?',
+          answer:
+            "Evet. İlaç bedeli önce hasta tarafından karşılanmışsa, faturalar ve tıbbi belgelerle SGK'ya başvurup ret cevabı alındıktan sonra bedelin iadesi için dava açılabilir; 5510 sayılı Kanun'un 97. maddesi uyarınca bu talep 5 yıllık zamanaşımına tabidir.",
+        },
+        {
+          question: 'SGK Enhertu Talebini Neden Reddeder?',
+          answer:
+            "En sık ret gerekçesi, ilacın SUT'un Bedeli Ödenecek İlaçlar Listesi'nde (EK-4/A) hiç yer almamasıdır. Bunun yanında TİTCK onayının bulunmaması ve sağlık kurulu raporunun HER2 pozitifliğini veya önceki tedavi başarısızlığını yeterince belgelememesi de ret sebepleri arasındadır.",
+        },
+        {
+          question: 'Enhertu Davası Hangi Mahkemede Görülür?',
+          answer:
+            'SSK veya Bağ-Kur kapsamındaki sigortalılar iş mahkemesinde, 5510 sayılı Kanun\'un 4/c maddesi kapsamındaki memur ve memur emeklileri ise idare mahkemesinde dava açar.',
+        },
+      ],
     },
     en: {
       title: 'Legal Processes for SGK Coverage of Trastuzumab Deruxtecan (Enhertu)',
@@ -113,6 +142,33 @@ Original article content to be migrated here. This section is reserved for legal
       seoTitle: 'SGK Coverage of Enhertu (Trastuzumab Deruxtecan) — Legal Process | VGS Law',
       seoDescription:
         'Legal avenues for obtaining SGK reimbursement of trastuzumab deruxtecan (Enhertu), including interim injunctions and off-label drug law in Turkey.',
+      merakEdilenler: [
+        {
+          question: 'How Should a Petition for an Enhertu (Trastuzumab Deruxtecan) SGK Application Be Prepared?',
+          answer:
+            "The petition should include a health board report documenting the patient's HER2 status and prior treatment history, any TİTCK off-label use approval, and the written pre-litigation application to SGK together with its refusal or implied refusal. Given the urgency of treatment, a request for an interim injunction should also be included.",
+        },
+        {
+          question: 'Where Is the Cost of Enhertu Obtained From?',
+          answer:
+            "Since Enhertu is not on SUT's Annex 4/A list, it cannot be obtained through a standard hospital-pharmacy prescription; the drug is generally imported and supplied to the patient through TİTCK's foreign drug procurement mechanism or through specialised pharmacies.",
+        },
+        {
+          question: 'Can the Amount Paid for Enhertu Be Reclaimed?',
+          answer:
+            'Yes. If the drug cost was initially paid by the patient, a case can be filed to reclaim it after applying to SGK with invoices and medical documents and receiving a refusal; under Article 97 of Law No. 5510, this claim is subject to a 5-year limitation period.',
+        },
+        {
+          question: 'Why Does SGK Refuse Enhertu Requests?',
+          answer:
+            "The most common ground is that the drug is not listed at all on SUT's Reimbursable Drugs List (Annex 4/A). The absence of TİTCK approval and a health board report that does not adequately document HER2 positivity or prior treatment failure are also common grounds for refusal.",
+        },
+        {
+          question: 'Which Court Hears an Enhertu Case?',
+          answer:
+            'Insured persons under SSK or Bağ-Kur file their case before the labour court, while civil servants and retired civil servants within the scope of Article 4/c of Law No. 5510 file before the administrative court.',
+        },
+      ],
     },
   },
   {
@@ -214,6 +270,33 @@ Onaylı endikasyondaki haksız retlere ilişkin davalar SUT hükümlerinin açı
             'Mahkemeden alınacak ihtiyati tedbir kararıyla, dava sonuçlanıncaya kadar ilaç bedelinin SGK tarafından karşılanması sağlanabilir.',
         },
       ],
+      merakEdilenler: [
+        {
+          question: 'Perjeta SGK Başvurusu Dilekçesi Nasıl Hazırlanır?',
+          answer:
+            "Dilekçeye HER2 pozitifliğini gösteren patoloji raporu, Perjeta'nın trastuzumab ile kombine kullanıldığını belirten onkoloji sağlık kurulu raporu, hastanın tedavi basamağını (metastatik, neoadjuvan veya adjuvan) gösteren epikriz ve varsa SGK ret yazısı eklenmelidir.",
+        },
+        {
+          question: 'Perjeta Bedeli Nereden Temin Edilir?',
+          answer:
+            "Perjeta SUT'un EK-4/A listesinde yer aldığından, onaylı endikasyonda kullanıldığında hastane eczaneleri üzerinden SGK protokolüyle doğrudan temin edilir. SGK'nın ödemeyi reddettiği durumlarda ilaç, dava süreci boyunca özel eczanelerden cepten satın alınmak zorunda kalınabilir.",
+        },
+        {
+          question: 'Perjeta İçin Ödenen Bedel Geri Alınabilir mi?',
+          answer:
+            "Evet. Onaylı endikasyonda haksız ret nedeniyle cepten ödenen Perjeta bedeli, faturalar ve SGK ret yazısıyla birlikte açılacak dava yoluyla geri istenebilir; talep 5510 sayılı Kanun'un 97. maddesindeki 5 yıllık zamanaşımına tabidir.",
+        },
+        {
+          question: 'SGK Perjeta Talebini Neden Reddeder?',
+          answer:
+            "En sık ret gerekçesi, ilacın trastuzumab olmaksızın veya SUT'ta tanımlı metastatik/neoadjuvan/adjuvan basamaklarının dışında bir klinik tabloda reçete edilmesidir. Sağlık kurulu raporunun HER2 pozitifliğini veya tedavi basamağını yeterince belgelememesi de sık karşılaşılan bir ret nedenidir.",
+        },
+        {
+          question: 'Perjeta Davası Hangi Mahkemede Görülür?',
+          answer:
+            "SSK veya Bağ-Kur kapsamındaki sigortalılar iş mahkemesinde, 5510 sayılı Kanun'un 4/c maddesi kapsamındaki memur ve memur emeklileri ise idare mahkemesinde dava açar.",
+        },
+      ],
     },
     en: {
       title: 'Does SGK Cover Perjeta (Pertuzumab)? Litigation for Off-Label Use',
@@ -297,6 +380,33 @@ Cases based on an unjustified refusal within the approved indication tend to pro
           question: 'How can I obtain Perjeta while the case is ongoing?',
           answer:
             'A court-ordered interim injunction can ensure SGK covers the drug cost until the case is concluded.',
+        },
+      ],
+      merakEdilenler: [
+        {
+          question: 'How Should a Petition for a Perjeta SGK Application Be Prepared?',
+          answer:
+            "The petition should include a pathology report confirming HER2 positivity, an oncology health board report stating that Perjeta is used in combination with trastuzumab, a discharge summary showing the treatment line (metastatic, neoadjuvant, or adjuvant), and, if applicable, SGK's refusal letter.",
+        },
+        {
+          question: 'Where Is the Cost of Perjeta Obtained From?',
+          answer:
+            "Since Perjeta is listed in SUT's Annex 4/A, it is supplied directly through hospital pharmacies under SGK's protocol when used within its approved indication. Where SGK refuses payment, the drug may need to be purchased out of pocket from a private pharmacy while the case is pending.",
+        },
+        {
+          question: 'Can the Amount Paid for Perjeta Be Reclaimed?',
+          answer:
+            "Yes. Perjeta costs paid out of pocket due to an unjustified refusal within the approved indication can be reclaimed through litigation, supported by invoices and SGK's refusal letter; the claim is subject to the 5-year limitation period under Article 97 of Law No. 5510.",
+        },
+        {
+          question: 'Why Does SGK Refuse Perjeta Requests?',
+          answer:
+            "The most common ground is prescribing the drug without trastuzumab or outside the metastatic, neoadjuvant, or adjuvant treatment lines defined in SUT. A health board report that does not adequately document HER2 positivity or the treatment line is another frequent ground for refusal.",
+        },
+        {
+          question: 'Which Court Hears a Perjeta Case?',
+          answer:
+            'Insured persons under SSK or Bağ-Kur file their case before the labour court, while civil servants and retired civil servants within the scope of Article 4/c of Law No. 5510 file before the administrative court.',
         },
       ],
     },
@@ -402,6 +512,33 @@ SUT kapsamındaki bir hakkın haksız reddine dayanan davalar görece daha hızl
           answer: "Evet, SGK'ya yazılı başvuru yapılmadan ve ret cevabı alınmadan dava açılamaz.",
         },
       ],
+      merakEdilenler: [
+        {
+          question: 'Erbitux SGK Başvurusu Dilekçesi Nasıl Hazırlanır?',
+          answer:
+            "Dilekçeye RAS geninin doğal tip olduğunu gösteren genetik test sonucu, ECOG performans skorunu belirten sağlık kurulu raporu, hastanın daha önce anti-EGFR tedavisi almadığını gösteren tedavi geçmişi ve SGK ret yazısı eklenmelidir.",
+        },
+        {
+          question: 'Erbitux Bedeli Nereden Temin Edilir?',
+          answer:
+            "SUT şartlarını (RAS doğal tip, ECOG 0-1, ilk kullanım) taşıyan hastalarda Erbitux hastane eczaneleri üzerinden SGK protokolüyle doğrudan karşılanır. Progresyon sonrası devam gibi şartların dışına çıkılan durumlarda ilaç, dava süresince özel eczanelerden cepten temin edilmek zorunda kalınabilir.",
+        },
+        {
+          question: 'Erbitux İçin Ödenen Bedel Geri Alınabilir mi?',
+          answer:
+            "Evet. SUT şartları sağlandığı halde haksız ret nedeniyle cepten ödenen Erbitux bedeli, faturalarla açılacak dava yoluyla geri istenebilir; talep 5510 sayılı Kanun'un 97. maddesindeki 5 yıllık zamanaşımına tabidir.",
+        },
+        {
+          question: 'SGK Erbitux Talebini Neden Reddeder?',
+          answer:
+            "En sık ret gerekçeleri; hastada RAS mutasyonu bulunması, hastalıkta ilerleme (progresyon) görülmesine rağmen ilaca devam edilmek istenmesi, ECOG performans skorunun 0-1 aralığında olmaması ve hastanın daha önce başka bir anti-EGFR tedavisi kullanmış olmasıdır.",
+        },
+        {
+          question: 'Erbitux Davası Hangi Mahkemede Görülür?',
+          answer:
+            "SSK veya Bağ-Kur kapsamındaki sigortalılar iş mahkemesinde, 5510 sayılı Kanun'un 4/c maddesi kapsamındaki memur ve memur emeklileri ise idare mahkemesinde dava açar.",
+        },
+      ],
     },
     en: {
       title: 'Does SGK Cover Erbitux (Cetuximab)? Conditions, Price & Litigation',
@@ -488,6 +625,33 @@ Cases based on an unjustified refusal within SUT conditions can proceed relative
         {
           question: 'Is an application to SGK mandatory before filing a case?',
           answer: 'Yes, a case cannot be filed without a prior written application to SGK and a refusal response.',
+        },
+      ],
+      merakEdilenler: [
+        {
+          question: 'How Should a Petition for an Erbitux SGK Application Be Prepared?',
+          answer:
+            "The petition should include the genetic test result confirming RAS wild-type status, a health board report stating the ECOG performance score, treatment history showing the patient has not previously received anti-EGFR therapy, and SGK's refusal letter.",
+        },
+        {
+          question: 'Where Is the Cost of Erbitux Obtained From?',
+          answer:
+            'For patients meeting the SUT conditions (RAS wild-type, ECOG 0-1, first use), Erbitux is supplied directly through hospital pharmacies under SGK\'s protocol. Where use falls outside those conditions — such as continuing after disease progression — the drug may need to be purchased out of pocket from a private pharmacy while the case is pending.',
+        },
+        {
+          question: 'Can the Amount Paid for Erbitux Be Reclaimed?',
+          answer:
+            "Yes. Erbitux costs paid out of pocket due to an unjustified refusal despite meeting SUT conditions can be reclaimed through litigation supported by invoices; the claim is subject to the 5-year limitation period under Article 97 of Law No. 5510.",
+        },
+        {
+          question: 'Why Does SGK Refuse Erbitux Requests?',
+          answer:
+            'The most common grounds are the presence of a RAS mutation, requesting to continue the drug despite disease progression, an ECOG performance score outside the 0-1 range, and the patient having previously received another anti-EGFR therapy.',
+        },
+        {
+          question: 'Which Court Hears an Erbitux Case?',
+          answer:
+            'Insured persons under SSK or Bağ-Kur file their case before the labour court, while civil servants and retired civil servants within the scope of Article 4/c of Law No. 5510 file before the administrative court.',
         },
       ],
     },
@@ -591,6 +755,33 @@ Bevax'a ilişkin SGK davaları, dosyanın SUT kapsamındaki bir endikasyona mı 
             'Zorunlu değildir, ancak SUT hükümlerinin teknik niteliği ve sürelerin kaçırılma riski nedeniyle bu alanda deneyimli bir avukattan destek alınması sürecin sağlıklı yürütülmesine katkı sağlar.',
         },
       ],
+      merakEdilenler: [
+        {
+          question: 'Bevax SGK Başvurusu Dilekçesi Nasıl Hazırlanır?',
+          answer:
+            "Dilekçeye hastalığın türünü ve evresini gösteren patoloji ve epikriz raporları, tedavi basamağını (birinci veya sonraki basamak) belirten onkoloji sağlık kurulu raporu, hastanın daha önce bevasizumab kullanmadığını gösteren tedavi kayıtları ve SGK ret yazısı eklenmelidir.",
+        },
+        {
+          question: 'Bevax Bedeli Nereden Temin Edilir?',
+          answer:
+            "SUT'ta sayılan endikasyonlarda (belirli basamaklarda metastatik kolorektal kanser, uygun glioblastoma vakaları) Bevax hastane eczaneleri üzerinden SGK protokolüyle karşılanır. Akciğer kanseri gibi SUT kapsamı dışında kalan endikasyonlarda ilaç, dava sürecinde alınacak ihtiyati tedbir kararına kadar özel eczanelerden cepten temin edilmek zorunda kalınabilir.",
+        },
+        {
+          question: 'Bevax İçin Ödenen Bedel Geri Alınabilir mi?',
+          answer:
+            "Evet. SUT kapsamındaki bir endikasyonda haksız ret nedeniyle cepten ödenen Bevax bedeli, faturalarla açılacak dava yoluyla geri istenebilir; talep 5510 sayılı Kanun'un 97. maddesindeki 5 yıllık zamanaşımına tabidir.",
+        },
+        {
+          question: 'SGK Bevax Talebini Neden Reddeder?',
+          answer:
+            "En sık ret gerekçesi, ilacın SUT'ta sayılan sınırlı endikasyon listesinin (kolorektal kanser, glioblastoma) dışında -örneğin akciğer, yumurtalık veya serviks kanserinde- reçete edilmesidir. Tedavi basamağının SUT'ta tanımlanan sıraya uymaması da sık görülen bir ret nedenidir.",
+        },
+        {
+          question: 'Bevax Davası Hangi Mahkemede Görülür?',
+          answer:
+            "SSK veya Bağ-Kur kapsamındaki sigortalılar iş mahkemesinde, 5510 sayılı Kanun'un 4/c maddesi kapsamındaki memur ve memur emeklileri ise idare mahkemesinde dava açar.",
+        },
+      ],
     },
     en: {
       title: 'Does SGK Cover Bevax (Bevacizumab)? Coverage by Indication & Litigation',
@@ -674,6 +865,33 @@ SGK cases concerning Bevax can conclude in different timeframes depending on whe
           question: 'Do I necessarily need a lawyer before filing a case?',
           answer:
             "It is not mandatory, but given the technical nature of SUT's provisions and the risk of missing deadlines, support from an experienced lawyer in this field contributes to a properly conducted process.",
+        },
+      ],
+      merakEdilenler: [
+        {
+          question: 'How Should a Petition for a Bevax SGK Application Be Prepared?',
+          answer:
+            'The petition should include pathology and discharge reports showing the type and stage of the disease, an oncology health board report stating the treatment line (first-line or later), treatment records showing the patient has not previously received bevacizumab, and SGK\'s refusal letter.',
+        },
+        {
+          question: 'Where Is the Cost of Bevax Obtained From?',
+          answer:
+            'For indications listed in SUT (certain lines of metastatic colorectal cancer, eligible glioblastoma cases), Bevax is supplied through hospital pharmacies under SGK\'s protocol. For indications outside SUT\'s scope, such as lung cancer, the drug may need to be purchased out of pocket from a private pharmacy until an interim injunction is obtained through litigation.',
+        },
+        {
+          question: 'Can the Amount Paid for Bevax Be Reclaimed?',
+          answer:
+            "Yes. Bevax costs paid out of pocket due to an unjustified refusal within a SUT-covered indication can be reclaimed through litigation supported by invoices; the claim is subject to the 5-year limitation period under Article 97 of Law No. 5510.",
+        },
+        {
+          question: 'Why Does SGK Refuse Bevax Requests?',
+          answer:
+            'The most common ground is prescribing the drug outside the limited list of indications defined in SUT (colorectal cancer, glioblastoma) — for example, in lung, ovarian, or cervical cancer. A treatment line that does not match the sequence defined in SUT is another frequent ground for refusal.',
+        },
+        {
+          question: 'Which Court Hears a Bevax Case?',
+          answer:
+            'Insured persons under SSK or Bağ-Kur file their case before the labour court, while civil servants and retired civil servants within the scope of Article 4/c of Law No. 5510 file before the administrative court.',
         },
       ],
     },
@@ -792,6 +1010,33 @@ SGK'ya karşı açılan ilaç davaları uygulamada ortalama **6 ay ile 18 ay** a
             "Fatura ve tıbbi belgelerle birlikte SGK'ya başvuru yapıp ret cevabı aldıktan sonra, ödenen bedelin iadesi için dava açılabilir.",
         },
       ],
+      merakEdilenler: [
+        {
+          question: 'Trodelvy SGK Başvurusu Dilekçesi Nasıl Hazırlanır?',
+          answer:
+            "Dilekçeye TİTCK'ya yapılan endikasyon dışı/yurt dışı ilaç kullanım başvurusu ve varsa onayı, onkoloji uzmanının ilacın hastanın tedavisi için zorunlu ve alternatifsiz olduğunu belirten raporu, reçete, SGK'ya yapılan ön başvuru ile alınan ret veya zımni ret yazısı ve ihtiyati tedbir talebi eklenmelidir.",
+        },
+        {
+          question: 'Trodelvy Bedeli Nereden Temin Edilir?',
+          answer:
+            "Trodelvy SUT'un EK-4/A listesinde yer almadığından hastane eczaneleri üzerinden standart reçeteyle temin edilemez; ilaç genellikle yurt dışından ithal edilerek özel eczaneler veya TİTCK'nın yurt dışı ilaç temin mekanizması aracılığıyla hastaya ulaştırılır.",
+        },
+        {
+          question: 'Trodelvy İçin Ödenen Bedel Geri Alınabilir mi?',
+          answer:
+            "Evet. İlaç bedeli önce hasta tarafından karşılanmışsa, faturalar ve tıbbi belgelerle SGK'ya başvurup ret cevabı alındıktan sonra bedelin iadesi için dava açılabilir; 5510 sayılı Kanun'un 97. maddesi uyarınca bu talep 5 yıllık zamanaşımına tabidir.",
+        },
+        {
+          question: 'SGK Trodelvy Talebini Neden Reddeder?',
+          answer:
+            "Trodelvy'nin SUT'un Bedeli Ödenecek İlaçlar Listesi'nde (EK-4/A) hiç yer almaması, tek başına ve neredeyse her başvuruda karşılaşılan ret gerekçesidir. TİTCK onayının bulunmaması ise ret kararını değiştirmese de sonraki davada dosyayı zayıflatabilir.",
+        },
+        {
+          question: 'Trodelvy Davası Hangi Mahkemede Görülür?',
+          answer:
+            "SSK veya Bağ-Kur kapsamındaki sigortalılar iş mahkemesinde, 5510 sayılı Kanun'un 4/c maddesi kapsamındaki memur ve memur emeklileri ise idare mahkemesinde dava açar.",
+        },
+      ],
     },
     en: {
       title: 'Does SGK Cover Trodelvy (Sacituzumab Govitecan)? 2026 Price & Litigation',
@@ -890,6 +1135,33 @@ Drug cases filed against SGK generally conclude within an average of **6 to 18 m
           question: 'Can I get a refund if I purchased the drug myself?',
           answer:
             'Yes — after applying to SGK with invoices and medical documents and receiving a refusal, a case can be filed to reclaim the amount paid.',
+        },
+      ],
+      merakEdilenler: [
+        {
+          question: 'How Should a Petition for a Trodelvy SGK Application Be Prepared?',
+          answer:
+            "The petition should include the application to TİTCK for off-label/foreign drug use and any approval obtained, the oncology specialist's report stating that the drug is necessary for the patient's treatment and that no alternative exists, the prescription, SGK's written pre-litigation application and its refusal or implied refusal, and a request for an interim injunction.",
+        },
+        {
+          question: 'Where Is the Cost of Trodelvy Obtained From?',
+          answer:
+            "Since Trodelvy is not on SUT's Annex 4/A list, it cannot be obtained through a standard hospital-pharmacy prescription; the drug is generally imported and supplied to the patient through specialised pharmacies or TİTCK's foreign drug procurement mechanism.",
+        },
+        {
+          question: 'Can the Amount Paid for Trodelvy Be Reclaimed?',
+          answer:
+            'Yes. If the drug cost was initially paid by the patient, a case can be filed to reclaim it after applying to SGK with invoices and medical documents and receiving a refusal; under Article 97 of Law No. 5510, this claim is subject to a 5-year limitation period.',
+        },
+        {
+          question: 'Why Does SGK Refuse Trodelvy Requests?',
+          answer:
+            "Trodelvy's absence from SUT's Reimbursable Drugs List (Annex 4/A) is, by itself, the ground cited in nearly every refusal. The lack of TİTCK approval does not change the refusal but can weaken the subsequent case file.",
+        },
+        {
+          question: 'Which Court Hears a Trodelvy Case?',
+          answer:
+            'Insured persons under SSK or Bağ-Kur file their case before the labour court, while civil servants and retired civil servants within the scope of Article 4/c of Law No. 5510 file before the administrative court.',
         },
       ],
     },
@@ -993,6 +1265,33 @@ SUT kapsamındaki bir hakkın haksız reddine dayanan davalar, konunun teknik ol
             'Hayır; mahkemeden alınacak ihtiyati tedbir kararıyla dava süresince ilacın kesintisiz teminine devam edilebilir.',
         },
       ],
+      merakEdilenler: [
+        {
+          question: 'Prexet SGK Başvurusu Dilekçesi Nasıl Hazırlanır?',
+          answer:
+            "Dilekçeye histolojik tip, evre ve performans skorunu içeren sağlık kurulu raporu, patoloji ve epikriz raporları, SGK ile yapılan ret/itiraz yazışmaları ve gerçek anlamda endikasyon dışı kullanım söz konusuysa TİTCK başvurusu eklenmelidir.",
+        },
+        {
+          question: 'Prexet Bedeli Nereden Temin Edilir?',
+          answer:
+            "Prexet SUT'un EK-4/A listesinde yer aldığından, onaylı endikasyonda ve eksiksiz raporla reçete edildiğinde hastane eczaneleri üzerinden SGK protokolüyle doğrudan karşılanır. Ret veya gecikme yaşanan durumlarda ilaç, itiraz/dava süreci boyunca özel eczanelerden cepten temin edilmek zorunda kalınabilir.",
+        },
+        {
+          question: 'Prexet İçin Ödenen Bedel Geri Alınabilir mi?',
+          answer:
+            "Evet. Rapor eksikliği veya usule aykırı ret nedeniyle cepten ödenen Prexet bedeli, faturalarla açılacak dava yoluyla geri istenebilir; talep 5510 sayılı Kanun'un 97. maddesindeki 5 yıllık zamanaşımına tabidir.",
+        },
+        {
+          question: 'SGK Prexet Talebini Neden Reddeder?',
+          answer:
+            "En sık ret gerekçeleri; sağlık kurulu raporunun histolojik tip, evre veya performans skoru gibi SUT'ta aranan ayrıntıları içermemesi, ilacın tanımlı kombinasyon veya tedavi basamağı dışında reçete edilmesi ve idame tedavide öngörülenden farklı bir sıklık veya doz talep edilmesidir.",
+        },
+        {
+          question: 'Prexet Davası Hangi Mahkemede Görülür?',
+          answer:
+            "SSK veya Bağ-Kur kapsamındaki sigortalılar iş mahkemesinde, 5510 sayılı Kanun'un 4/c maddesi kapsamındaki memur ve memur emeklileri ise idare mahkemesinde dava açar.",
+        },
+      ],
     },
     en: {
       title: 'Does SGK Cover Prexet (Pemetrexed Disodium)? Refusal & Delay Remedies',
@@ -1076,6 +1375,33 @@ Cases based on an unjustified refusal of a right covered by SUT can conclude rel
           question: 'Do I have to interrupt treatment while the case is ongoing?',
           answer:
             'No; a court-ordered interim injunction allows uninterrupted supply of the drug to continue while the case is pending.',
+        },
+      ],
+      merakEdilenler: [
+        {
+          question: 'How Should a Petition for a Prexet SGK Application Be Prepared?',
+          answer:
+            'The petition should include a health board report stating the histological type, stage, and performance score, pathology and discharge reports, the refusal/objection correspondence with SGK, and, if genuine off-label use is involved, the TİTCK application.',
+        },
+        {
+          question: 'Where Is the Cost of Prexet Obtained From?',
+          answer:
+            "Since Prexet is listed in SUT's Annex 4/A, it is supplied directly through hospital pharmacies under SGK's protocol when prescribed within the approved indication and supported by a complete report. In cases of refusal or delay, the drug may need to be purchased out of pocket from a private pharmacy during the objection/litigation process.",
+        },
+        {
+          question: 'Can the Amount Paid for Prexet Be Reclaimed?',
+          answer:
+            "Yes. Prexet costs paid out of pocket due to an incomplete report or an unlawful refusal can be reclaimed through litigation supported by invoices; the claim is subject to the 5-year limitation period under Article 97 of Law No. 5510.",
+        },
+        {
+          question: 'Why Does SGK Refuse Prexet Requests?',
+          answer:
+            'The most common grounds are a health board report that omits details required by SUT such as histological type, stage, or performance score; a prescription outside the defined combination or treatment line; and a request for a different frequency or dose during maintenance treatment than what is foreseen.',
+        },
+        {
+          question: 'Which Court Hears a Prexet Case?',
+          answer:
+            'Insured persons under SSK or Bağ-Kur file their case before the labour court, while civil servants and retired civil servants within the scope of Article 4/c of Law No. 5510 file before the administrative court.',
         },
       ],
     },

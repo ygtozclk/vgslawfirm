@@ -278,9 +278,12 @@ export default async function ArticleDetailPage({
 
   const labels = {
     faqHeading: tr ? 'Sıkça Sorulan Sorular' : 'Frequently Asked Questions',
+    merakEdilenlerHeading: tr ? 'Merak Edilenler' : 'Frequently Searched Questions',
     relatedHeading: tr ? 'İlgili İçerikler' : 'Related Reading',
     relatedIctihatHeading: tr ? 'İlgili Yargı Kararları' : 'Related Court Decisions',
   }
+
+  const allFaq = [...(content.faq ?? []), ...(content.merakEdilenler ?? [])]
 
   const relatedArticles = (article.related?.articles ?? [])
     .map((s) => getArticleBySlug(s))
@@ -379,6 +382,42 @@ export default async function ArticleDetailPage({
               </h2>
               <div className="space-y-3">
                 {content.faq.map((qa, i) => (
+                  <details
+                    key={i}
+                    className="group rounded-sm border border-paper-2 bg-paper-2/50 px-5 py-4"
+                  >
+                    <summary className="flex cursor-pointer select-none list-none items-center justify-between gap-4 font-medium text-ink marker:hidden">
+                      {qa.question}
+                      <svg
+                        className="h-4 w-4 flex-shrink-0 text-slate transition-transform duration-200 group-open:rotate-180"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                        aria-hidden="true"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </summary>
+                    <p className="mt-3 text-sm text-slate leading-relaxed">{qa.answer}</p>
+                  </details>
+                ))}
+              </div>
+            </section>
+          )}
+
+          {/* Merak Edilenler (long-tail query coverage) */}
+          {content.merakEdilenler && content.merakEdilenler.length > 0 && (
+            <section className="mt-12 border-t border-paper-2 pt-10" aria-labelledby="merak-edilenler-heading">
+              <h2
+                id="merak-edilenler-heading"
+                className="mb-6 text-h3 font-semibold text-ink"
+                style={{ fontFamily: 'var(--font-heading)' }}
+              >
+                {labels.merakEdilenlerHeading}
+              </h2>
+              <div className="space-y-3">
+                {content.merakEdilenler.map((qa, i) => (
                   <details
                     key={i}
                     className="group rounded-sm border border-paper-2 bg-paper-2/50 px-5 py-4"
@@ -527,15 +566,15 @@ export default async function ArticleDetailPage({
         }}
       />
 
-      {/* JSON-LD: FAQPage */}
-      {content.faq && content.faq.length > 0 && (
+      {/* JSON-LD: FAQPage (Sıkça Sorulan Sorular + Merak Edilenler combined) */}
+      {allFaq.length > 0 && (
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'FAQPage',
-              mainEntity: content.faq.map((qa) => ({
+              mainEntity: allFaq.map((qa) => ({
                 '@type': 'Question',
                 name: qa.question,
                 acceptedAnswer: {
