@@ -5,6 +5,7 @@ import { getDictionary, hasLocale } from '@/lib/i18n'
 import type { Locale } from '@/lib/i18n'
 import { practiceAreas } from '@/content/practice-areas'
 import { getAllIctihat } from '@/content/ictihat'
+import { getDrugNames } from '@/content/articles'
 import PracticeAreaCard from '@/components/PracticeAreaCard'
 import IctihatCard from '@/components/IctihatCard'
 import PullQuote from '@/components/PullQuote'
@@ -19,9 +20,26 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { lang } = await params
   if (!hasLocale(lang)) return {}
-  const dict = await getDictionary(lang as Locale)
+  const locale = lang as Locale
+  const dict = await getDictionary(locale)
+
+  // Drug names are pulled live from content/articles.ts (via drugName) so the
+  // homepage title/description pick up every published drug article — and
+  // only those — without ever needing a manual edit here.
+  const drugNames = getDrugNames(locale)
+  const drugList = drugNames.join(', ')
+
+  const title = locale === 'en'
+    ? `${dict.meta.siteTitle} | SGK Drug Reimbursement Lawsuit — ${drugList}`
+    : `${dict.meta.siteTitle} | SGK İlaç Davası — ${drugList}`
+
+  const description = locale === 'en'
+    ? `Legal counsel for SGK reimbursement disputes over targeted cancer drugs including ${drugList}.`
+    : `SGK tarafından karşılanmasına ilişkin dava süreçlerinde ele alınan akıllı kanser ilaçları: ${drugList}. ${dict.meta.siteTitle}.`
+
   return {
-    description: dict.meta.seoDescription,
+    title: { absolute: title },
+    description,
     alternates: {
       canonical: `https://www.vgshukuk.com/${lang}`,
       languages: {

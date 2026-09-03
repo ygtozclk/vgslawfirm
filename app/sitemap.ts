@@ -15,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/calisma-alanlari',
     '/ekibimiz',
     '/yayinlar',
+    '/ilaclar',
     '/ictihat',
     '/iletisim',
     '/kvkk-aydinlatma',

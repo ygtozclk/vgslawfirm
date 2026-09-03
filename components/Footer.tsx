@@ -20,6 +20,7 @@ export default function Footer({ locale, dict }: FooterProps) {
     { href: `/${locale}/calisma-alanlari`, label: nav.practiceAreas },
     { href: `/${locale}/ekibimiz`, label: nav.team },
     { href: `/${locale}/yayinlar`, label: nav.publications },
+    { href: `/${locale}/ilaclar`, label: locale === 'en' ? 'Drugs' : 'İlaçlar' },
     { href: `/${locale}/iletisim`, label: nav.contact },
   ]
 

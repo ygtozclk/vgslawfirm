@@ -15,6 +15,19 @@ const nextConfig: NextConfig = {
     { source: '/blog', destination: '/tr/yayinlar', permanent: true },
     // Wix contact
     { source: '/iletisim', destination: '/tr/iletisim', permanent: true },
+    // İçtihat sayfaları: dava numarası bazlı eski slug'lardan konu bazlı yeni slug'lara 301
+    { source: '/tr/ictihat/ygt-10hd-2025-3980', destination: '/tr/ictihat/kanser-ilaci-davasinda-derdestlik', permanent: true },
+    { source: '/en/ictihat/ygt-10hd-2025-3980', destination: '/en/ictihat/kanser-ilaci-davasinda-derdestlik', permanent: true },
+    { source: '/tr/ictihat/ygt-10hd-2025-10958', destination: '/tr/ictihat/kanser-ilaci-odeme-olcutleri', permanent: true },
+    { source: '/en/ictihat/ygt-10hd-2025-10958', destination: '/en/ictihat/kanser-ilaci-odeme-olcutleri', permanent: true },
+    { source: '/tr/ictihat/ygt-10hd-2025-11761', destination: '/tr/ictihat/odeme-listesi-disi-ilacta-ihtiyati-tedbir', permanent: true },
+    { source: '/en/ictihat/ygt-10hd-2025-11761', destination: '/en/ictihat/odeme-listesi-disi-ilacta-ihtiyati-tedbir', permanent: true },
+    { source: '/tr/ictihat/ygt-10hd-2025-8068', destination: '/tr/ictihat/kanser-ilaci-davasinda-feragat-vekalet-ucreti', permanent: true },
+    { source: '/en/ictihat/ygt-10hd-2025-8068', destination: '/en/ictihat/kanser-ilaci-davasinda-feragat-vekalet-ucreti', permanent: true },
+    { source: '/tr/ictihat/ygt-10hd-2025-3244', destination: '/tr/ictihat/kanser-ilaci-davasinin-acilmamis-sayilmasi', permanent: true },
+    { source: '/en/ictihat/ygt-10hd-2025-3244', destination: '/en/ictihat/kanser-ilaci-davasinin-acilmamis-sayilmasi', permanent: true },
+    { source: '/tr/ictihat/ygt-10hd-2024-10976', destination: '/tr/ictihat/ihtiyati-tedbirin-kaldirilmasi', permanent: true },
+    { source: '/en/ictihat/ygt-10hd-2024-10976', destination: '/en/ictihat/ihtiyati-tedbirin-kaldirilmasi', permanent: true },
     // Root → Turkish (locale redirect also handled by proxy.ts)
     { source: '/', destination: '/tr', permanent: false },
   ],
