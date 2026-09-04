@@ -29,7 +29,7 @@ export async function generateMetadata({
   if (!article) return {}
   const content = locale === 'en' ? article.en : article.tr
   return {
-    title: content.seoTitle,
+    title: { absolute: content.seoTitle },
     description: content.seoDescription,
     alternates: {
       canonical: `${SITE_URL}/${lang}/yayinlar/${slug}`,

@@ -31,7 +31,7 @@ export async function generateMetadata({
   const description = (ictihat.ozet ?? ictihat.uyusmazlik).slice(0, 160)
   const title = `${ictihat.konu} | ${d.heading} | VGS Hukuk`
   return {
-    title,
+    title: { absolute: title },
     description,
     alternates: {
       canonical: canonicalUrl,
