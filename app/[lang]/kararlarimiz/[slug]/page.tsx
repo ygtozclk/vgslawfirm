@@ -79,7 +79,7 @@ export default async function KararDetailPage({
     : undefined
 
   const labels = {
-    back: tr ? 'Kazandığımız Davalara Dön' : "Back to Cases We've Won",
+    back: tr ? 'Emsal Kararlara Dön' : 'Back to Precedent Decisions',
     relatedArticleHeading: tr ? 'İlgili Hukuki Rehber' : 'Related Legal Guide',
     ilaclarHubLabel: tr ? 'Tüm SGK İlaç Davaları Rehberini İncele' : 'Browse All SGK Drug Litigation Guides',
     noticeHeading: tr ? 'Bilgilendirme Notu' : 'Informational Notice',

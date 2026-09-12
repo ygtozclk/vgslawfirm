@@ -54,7 +54,7 @@ export default async function IlaclarPage({
   const drugNames = getDrugNames(locale)
   const kararSayisi = getAllKararlar().length
 
-  const kararlarimizHeading = locale === 'en' ? "Cases We've Won" : 'Kararlarımız'
+  const kararlarimizHeading = locale === 'en' ? 'Precedent Decisions' : 'Kararlarımız'
   const kararlarimizSub =
     locale === 'en'
       ? `Anonymised official court decisions from ${kararSayisi} SGK drug reimbursement cases we've handled and won.`

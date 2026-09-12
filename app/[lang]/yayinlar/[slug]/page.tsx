@@ -282,7 +282,7 @@ export default async function ArticleDetailPage({
     merakEdilenlerHeading: tr ? 'Merak Edilenler' : 'Frequently Searched Questions',
     relatedHeading: tr ? 'İlgili İçerikler' : 'Related Reading',
     relatedIctihatHeading: tr ? 'İlgili Yargı Kararları' : 'Related Court Decisions',
-    relatedKararlarHeading: tr ? 'Kazandığımız Davalar' : "Cases We've Won",
+    relatedKararlarHeading: tr ? 'Emsal Kararlar' : 'Precedent Decisions',
   }
 
   const allFaq = [...(content.faq ?? []), ...(content.merakEdilenler ?? [])]
