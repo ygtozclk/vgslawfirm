@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
+import Link from 'next/link'
 import { getDictionary, hasLocale } from '@/lib/i18n'
 import type { Locale } from '@/lib/i18n'
 import { getDrugArticles, getDrugNames } from '@/content/articles'
+import { getAllKararlar } from '@/content/kararlar'
 import ArticleCard from '@/components/ArticleCard'
 import Breadcrumbs from '@/components/Breadcrumbs'
 
@@ -50,6 +52,14 @@ export default async function IlaclarPage({
   const dict = await getDictionary(locale)
   const drugArticles = getDrugArticles()
   const drugNames = getDrugNames(locale)
+  const kararSayisi = getAllKararlar().length
+
+  const kararlarimizHeading = locale === 'en' ? "Cases We've Won" : 'Kararlarımız'
+  const kararlarimizSub =
+    locale === 'en'
+      ? `Anonymised official court decisions from ${kararSayisi} SGK drug reimbursement cases we've handled and won.`
+      : `Takip ettiğimiz ve kazandığımız ${kararSayisi} SGK ilaç davasına ait anonimleştirilmiş resmi mahkeme kararları.`
+  const kararlarimizCta = locale === 'en' ? 'View the Decisions' : 'Kararları İncele'
 
   const heading = locale === 'en' ? 'SGK Drug Reimbursement Lawsuits' : 'SGK İlaç Davası'
   const sub = locale === 'en'
@@ -99,6 +109,32 @@ export default async function IlaclarPage({
               </li>
             ))}
           </ul>
+        </div>
+      </section>
+
+      {/* Kararlarımız — cross-link into the won-cases section */}
+      <section className="bg-paper-2 py-[clamp(3rem,6vw,5rem)] px-6">
+        <div className="mx-auto max-w-6xl">
+          <div className="flex flex-col items-start gap-6 rounded-sm border border-night-900/10 bg-paper px-8 py-10 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <h2
+                className="text-h3 font-semibold text-ink"
+                style={{ fontFamily: 'var(--font-heading)' }}
+              >
+                {kararlarimizHeading}
+              </h2>
+              <p className="mt-2 max-w-xl text-sm text-slate leading-relaxed">{kararlarimizSub}</p>
+            </div>
+            <Link
+              href={`/${locale}/kararlarimiz`}
+              className="inline-flex flex-shrink-0 items-center gap-2 rounded-sm bg-night-900 px-6 py-3 text-sm font-semibold text-paper transition-colors hover:bg-night-800"
+            >
+              {kararlarimizCta}
+              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </Link>
+          </div>
         </div>
       </section>
 

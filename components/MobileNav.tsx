@@ -37,6 +37,10 @@ export default function MobileNav({ locale, dict }: MobileNavProps) {
       href: `/${locale}/ictihat`,
       label: locale === 'en' ? 'Court Decisions' : 'Yargı Kararları',
     },
+    {
+      href: `/${locale}/kararlarimiz`,
+      label: locale === 'en' ? "Cases We've Won" : 'Kararlarımız',
+    },
     { href: `/${locale}/iletisim`, label: dict.contact },
   ]
 

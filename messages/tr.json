@@ -142,6 +142,16 @@
     "relatedDecisions": "İlgili Yargı Kararları",
     "allDecisions": "Tüm Kararlar"
   },
+  "kararlarimiz": {
+    "heading": "Kazandığımız Davalar",
+    "sub": "VGS Hukuk & Danışmanlık'ın takip ettiği ve kazandığı SGK ilaç davalarına ait anonimleştirilmiş resmi mahkeme kararları.",
+    "seoTitle": "Kazandığımız Davalar — SGK İlaç Davası Kararları",
+    "seoDescription": "VGS Hukuk & Danışmanlık'ın takip ettiği ve kazandığı SGK ilaç davalarına ait anonimleştirilmiş resmi mahkeme kararları. İdare ve iş mahkemesi kararları.",
+    "readMore": "Kararı İncele",
+    "relatedDecisions": "Kazandığımız Davalar",
+    "allDecisions": "Tüm Kararlar",
+    "anonimNotice": "Taraf kimlik bilgileri, hakim/katip isimleri ve dava/karar numaraları gizlilik gereği anonimleştirilmiştir."
+  },
   "breadcrumbs": {
     "home": "Anasayfa"
   },

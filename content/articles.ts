@@ -23,6 +23,7 @@ export interface Article {
   related?: {
     articles?: string[]
     ictihat?: string[]
+    kararlar?: string[]
   }
   tr: {
     title: string
@@ -58,6 +59,14 @@ export const articles: Article[] = [
     authorTitle: 'Avukat',
     authorBar: 'Ankara Barosu',
     publishedAt: '2024-06-01',
+    related: {
+      kararlar: [
+        'mide-kanseri-enhertu-idare-mahkemesi-karari',
+        'meme-kanseri-enhertu-is-mahkemesi-karari',
+        'adenoid-kistik-karsinom-enhertu-is-mahkemesi-karari',
+        'meme-kanseri-enhertu-is-mahkemesi-karari-2',
+      ],
+    },
     tr: {
       title: 'Trastuzumab Derukstekan (Enhertu) Bakımından İlaç Bedelinin SGK\'ca Karşılanmasına İlişkin Hukuki Süreçler',
       summary:
@@ -1470,4 +1479,22 @@ export function getDrugArticles(): DrugArticle[] {
 
 export function getDrugNames(locale: 'tr' | 'en'): string[] {
   return getDrugArticles().map((a) => (locale === 'en' ? a.drugName.en : a.drugName.tr))
+}
+
+// Finds the drug article matching a karar's ilaçAdı/etkenMadde (e.g. karar
+// "ENHERTU" / "Trastuzumab Deruxtecan" -> article drugName.tr "Trastuzumab
+// Derukstekan"), used to cross-link kararlar detail pages back to their
+// drug's article when one exists.
+export function getArticleForDrug(ilacAdi: string, etkenMadde?: string): DrugArticle | undefined {
+  const norms = [ilacAdi, etkenMadde].filter(Boolean).map((s) => s!.toLowerCase())
+  if (norms.length === 0) return undefined
+  return getDrugArticles().find((a) => {
+    // Match against the generic name and also the article's own title text,
+    // since a karar's etken madde spelling (e.g. "Deruxtecan") doesn't always
+    // match the article's Turkish transliteration (e.g. "Derukstekan") — the
+    // brand name (e.g. "Enhertu"), mentioned in the title, bridges the two.
+    const drugTr = a.drugName.tr.toLowerCase()
+    const haystack = `${drugTr} ${a.tr.title.toLowerCase()} ${a.tr.seoTitle.toLowerCase()}`
+    return norms.some((n) => haystack.includes(n) || n.includes(drugTr))
+  })
 }

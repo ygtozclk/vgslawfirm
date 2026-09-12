@@ -6,6 +6,7 @@ import { getDictionary, hasLocale } from '@/lib/i18n'
 import type { Locale } from '@/lib/i18n'
 import { articles, getArticleBySlug } from '@/content/articles'
 import { getIctihatBySlug } from '@/content/ictihat'
+import { getKararBySlug } from '@/content/kararlar'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import ReadingProgress from '@/components/ReadingProgress'
 
@@ -281,6 +282,7 @@ export default async function ArticleDetailPage({
     merakEdilenlerHeading: tr ? 'Merak Edilenler' : 'Frequently Searched Questions',
     relatedHeading: tr ? 'İlgili İçerikler' : 'Related Reading',
     relatedIctihatHeading: tr ? 'İlgili Yargı Kararları' : 'Related Court Decisions',
+    relatedKararlarHeading: tr ? 'Kazandığımız Davalar' : "Cases We've Won",
   }
 
   const allFaq = [...(content.faq ?? []), ...(content.merakEdilenler ?? [])]
@@ -291,6 +293,9 @@ export default async function ArticleDetailPage({
   const relatedIctihat = (article.related?.ictihat ?? [])
     .map((s) => getIctihatBySlug(s))
     .filter((i): i is NonNullable<typeof i> => Boolean(i))
+  const relatedKararlar = (article.related?.kararlar ?? [])
+    .map((s) => getKararBySlug(s))
+    .filter((k): k is NonNullable<typeof k> => Boolean(k))
 
   const blocks = parseBlocks(content.content)
 
@@ -443,8 +448,27 @@ export default async function ArticleDetailPage({
           )}
 
           {/* Related content */}
-          {(relatedArticles.length > 0 || relatedIctihat.length > 0) && (
+          {(relatedArticles.length > 0 || relatedIctihat.length > 0 || relatedKararlar.length > 0) && (
             <section className="mt-12 border-t border-paper-2 pt-10">
+              {relatedKararlar.length > 0 && (
+                <div className="mb-8">
+                  <h2 className="mb-4 text-xs font-semibold uppercase tracking-widest text-gold-500">
+                    {labels.relatedKararlarHeading}
+                  </h2>
+                  <ul className="grid gap-3 sm:grid-cols-2">
+                    {relatedKararlar.map((k) => (
+                      <li key={k.slug}>
+                        <Link
+                          href={`/${locale}/kararlarimiz/${k.slug}`}
+                          className="block rounded-sm border border-paper-2 bg-paper px-5 py-4 text-sm font-medium text-ink transition-colors hover:border-gold-500 hover:text-gold-500"
+                        >
+                          {k.title}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
               {relatedArticles.length > 0 && (
                 <div className="mb-8">
                   <h2 className="mb-4 text-xs font-semibold uppercase tracking-widest text-gold-500">

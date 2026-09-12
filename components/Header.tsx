@@ -150,6 +150,15 @@ export default function Header({ locale, dict }: HeaderProps) {
           </Link>
 
           <Link
+            href={`/${locale}/kararlarimiz`}
+            className={`rounded-sm px-3 py-2 text-sm transition-colors ${
+              isActive(`/${locale}/kararlarimiz`) ? 'text-gold-500' : 'text-paper/80 hover:text-paper'
+            }`}
+          >
+            {locale === 'en' ? "Cases We've Won" : 'Kararlarımız'}
+          </Link>
+
+          <Link
             href={`/${locale}/iletisim`}
             className={`rounded-sm px-3 py-2 text-sm transition-colors ${
               isActive(`/${locale}/iletisim`) ? 'text-gold-500' : 'text-paper/80 hover:text-paper'
