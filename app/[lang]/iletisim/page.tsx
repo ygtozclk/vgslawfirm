@@ -101,7 +101,7 @@ export default async function IletisimPage({
                   <span className="sr-only">{d.phone}</span>
                 </dt>
                 <dd className="flex flex-col gap-1 text-sm">
-                  <a href="tel:+903122316975" className="text-ink hover:text-gold-500 transition-colors">+90 312 231 6975</a>
+                  <a href="tel:+905327692084" className="text-ink hover:text-gold-500 transition-colors">0532 769 20 84</a>
                   <a href="tel:+905396595584" className="text-ink hover:text-gold-500 transition-colors">+90 539 659 5584</a>
                 </dd>
               </div>
@@ -127,8 +127,8 @@ export default async function IletisimPage({
             <div className="mt-10 overflow-hidden rounded-sm border border-paper/60 bg-paper h-64 flex items-center justify-center">
               <p className="text-sm text-slate text-center px-8">
                 {locale === 'en'
-                  ? 'Google Maps embed — Strazburg Cad. No: 16/24, Sıhhiye, Çankaya / Ankara'
-                  : 'Google Haritalar gömülü içerik — Strazburg Cad. No: 16/24, Sıhhiye, Çankaya / Ankara'}
+                  ? 'Google Maps embed — Strazburg Cad. No: 16/17, Sıhhiye, Çankaya / Ankara'
+                  : 'Google Haritalar gömülü içerik — Strazburg Cad. No: 16/17, Sıhhiye, Çankaya / Ankara'}
               </p>
             </div>
           </div>
@@ -158,11 +158,11 @@ export default async function IletisimPage({
             '@type': 'LegalService',
             name: 'VGS Hukuk & Danışmanlık',
             url: 'https://www.vgshukuk.com',
-            telephone: ['+903122316975', '+905396595584'],
+            telephone: ['+905327692084', '+905396595584'],
             email: site.email,
             address: {
               '@type': 'PostalAddress',
-              streetAddress: 'Strazburg Cad. No: 16/24',
+              streetAddress: 'Strazburg Cad. No: 16/17',
               addressLocality: 'Sıhhiye, Çankaya',
               addressRegion: 'Ankara',
               postalCode: '06430',
