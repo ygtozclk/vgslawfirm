@@ -18,7 +18,7 @@ export interface Attorney {
     bar: string
   }
   contact: {
-    phone: string
+    phone?: string
     email: string
     linkedin?: string
   }
@@ -90,7 +90,6 @@ export const team: Attorney[] = [
       bar: 'Ankara Bar Association',
     },
     contact: {
-      phone: '+90 532 769 20 84',
       email: 'dilek.ozaslan@vgshukuk.com',
     },
   },

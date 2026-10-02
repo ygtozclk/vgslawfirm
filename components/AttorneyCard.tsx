@@ -50,16 +50,18 @@ export default function AttorneyCard({ attorney, locale, dict }: AttorneyCardPro
           </svg>
           <span className="sr-only">{dict.email}</span>
         </a>
-        <a
-          href={`tel:${attorney.contact.phone.replace(/\s/g, '')}`}
-          className="flex items-center gap-1.5 text-sm text-slate hover:text-gold-500 transition-colors"
-          aria-label={`${dict.phone}: ${attorney.contact.phone}`}
-        >
-          <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5} aria-hidden="true">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
-          </svg>
-          <span className="sr-only">{dict.phone}</span>
-        </a>
+        {attorney.contact.phone && (
+          <a
+            href={`tel:${attorney.contact.phone.replace(/\s/g, '')}`}
+            className="flex items-center gap-1.5 text-sm text-slate hover:text-gold-500 transition-colors"
+            aria-label={`${dict.phone}: ${attorney.contact.phone}`}
+          >
+            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5} aria-hidden="true">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+            </svg>
+            <span className="sr-only">{dict.phone}</span>
+          </a>
+        )}
         {attorney.contact.linkedin && (
           <a
             href={attorney.contact.linkedin}
@@ -129,14 +131,16 @@ export default function AttorneyCard({ attorney, locale, dict }: AttorneyCardPro
                 </a>
               </dd>
             </div>
-            <div>
-              <dt className="text-xs font-semibold uppercase tracking-wider text-slate">{dict.phone}</dt>
-              <dd className="mt-1">
-                <a href={`tel:${attorney.contact.phone.replace(/\s/g, '')}`} className="text-ink hover:text-gold-500 transition-colors">
-                  {attorney.contact.phone}
-                </a>
-              </dd>
-            </div>
+            {attorney.contact.phone && (
+              <div>
+                <dt className="text-xs font-semibold uppercase tracking-wider text-slate">{dict.phone}</dt>
+                <dd className="mt-1">
+                  <a href={`tel:${attorney.contact.phone.replace(/\s/g, '')}`} className="text-ink hover:text-gold-500 transition-colors">
+                    {attorney.contact.phone}
+                  </a>
+                </dd>
+              </div>
+            )}
           </dl>
         )}
       </div>

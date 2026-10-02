@@ -101,7 +101,6 @@ export default async function IletisimPage({
                   <span className="sr-only">{d.phone}</span>
                 </dt>
                 <dd className="flex flex-col gap-1 text-sm">
-                  <a href="tel:+905327692084" className="text-ink hover:text-gold-500 transition-colors">0532 769 20 84</a>
                   <a href="tel:+905396595584" className="text-ink hover:text-gold-500 transition-colors">+90 539 659 5584</a>
                 </dd>
               </div>
@@ -158,7 +157,7 @@ export default async function IletisimPage({
             '@type': 'LegalService',
             name: 'VGS Hukuk & Danışmanlık',
             url: 'https://www.vgshukuk.com',
-            telephone: ['+905327692084', '+905396595584'],
+            telephone: '+905396595584',
             email: site.email,
             address: {
               '@type': 'PostalAddress',

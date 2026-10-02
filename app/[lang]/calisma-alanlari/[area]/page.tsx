@@ -111,7 +111,7 @@ export default async function PracticeAreaDetailPage({
                       postalCode: '06430',
                       addressCountry: 'TR',
                     },
-                    telephone: '+905327692084',
+                    telephone: '+905396595584',
                     url: 'https://www.vgshukuk.com',
                     sameAs: ['https://linkedin.com/company/vgshukuk'],
                   },

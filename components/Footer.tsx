@@ -8,7 +8,7 @@ interface FooterProps {
   dict: Dictionary
 }
 
-const { name: firmName, address, phone1, phone2, email, linkedin } = site
+const { name: firmName, address, phone, email, linkedin } = site
 
 export default function Footer({ locale, dict }: FooterProps) {
   const nav = dict.nav
@@ -105,11 +105,8 @@ export default function Footer({ locale, dict }: FooterProps) {
             </h3>
             <address className="flex flex-col gap-3 not-italic text-sm text-mist-2">
               <span className="leading-relaxed">{address}</span>
-              <a href={`tel:${phone1.replace(/\s/g, '')}`} className="hover:text-gold-300 transition-colors">
-                {phone1}
-              </a>
-              <a href={`tel:${phone2.replace(/\s/g, '')}`} className="hover:text-gold-300 transition-colors">
-                {phone2}
+              <a href={`tel:${phone.replace(/\s/g, '')}`} className="hover:text-gold-300 transition-colors">
+                {phone}
               </a>
               <a href={`mailto:${email}`} className="hover:text-gold-300 transition-colors break-all">
                 {email}
