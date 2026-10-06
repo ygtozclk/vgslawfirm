@@ -3,10 +3,12 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { getDictionary, hasLocale } from '@/lib/i18n'
 import type { Locale } from '@/lib/i18n'
-import { getDrugArticles, getDrugNames } from '@/content/articles'
+import { getDrugArticles } from '@/content/articles'
+import { getAllDrugs, getDrugHref, getDrugLinks, getDrugNames } from '@/content/drugs'
 import { getAllKararlar } from '@/content/kararlar'
 import ArticleCard from '@/components/ArticleCard'
 import Breadcrumbs from '@/components/Breadcrumbs'
+import DrugLinkList from '@/components/DrugLinkList'
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.vgshukuk.com'
 
@@ -52,6 +54,10 @@ export default async function IlaclarPage({
   const dict = await getDictionary(locale)
   const drugArticles = getDrugArticles()
   const drugNames = getDrugNames(locale)
+  const allDrugs = getAllDrugs()
+  const drugLinks = getDrugLinks(locale)
+  // Drugs with a karar but no article yet — linked straight to their decisions
+  const kararOnlyDrugs = allDrugs.filter((drug) => !drug.articleSlug)
   const kararSayisi = getAllKararlar().length
 
   const kararlarimizHeading = locale === 'en' ? 'Precedent Decisions' : 'Kararlarımız'
@@ -91,9 +97,22 @@ export default async function IlaclarPage({
         </div>
       </section>
 
-      {/* Drug article grid */}
-      <section className="bg-paper py-[clamp(4rem,8vw,7rem)] px-6">
+      {/* All drugs — articles and kararlar combined */}
+      <section className="bg-paper pt-[clamp(3rem,6vw,5rem)] px-6">
         <div className="mx-auto max-w-6xl">
+          <DrugLinkList drugs={drugLinks} locale={locale} />
+        </div>
+      </section>
+
+      {/* Drug article grid */}
+      <section className="bg-paper py-[clamp(3rem,6vw,5rem)] px-6">
+        <div className="mx-auto max-w-6xl">
+          <h2
+            className="mb-8 text-h3 font-semibold text-ink"
+            style={{ fontFamily: 'var(--font-heading)' }}
+          >
+            {locale === 'en' ? 'Legal Guides' : 'Hukuki Rehberler'}
+          </h2>
           <ul
             className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
             aria-label={locale === 'en' ? 'Drugs' : 'İlaçlar'}
@@ -111,6 +130,47 @@ export default async function IlaclarPage({
           </ul>
         </div>
       </section>
+
+      {/* Drugs with court decisions but no article yet */}
+      {kararOnlyDrugs.length > 0 && (
+        <section className="bg-paper pb-[clamp(4rem,8vw,7rem)] px-6">
+          <div className="mx-auto max-w-6xl">
+            <h2
+              className="mb-8 text-h3 font-semibold text-ink"
+              style={{ fontFamily: 'var(--font-heading)' }}
+            >
+              {locale === 'en' ? 'Drugs With Court Decisions' : 'Mahkeme Kararı Bulunan İlaçlar'}
+            </h2>
+            <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {kararOnlyDrugs.map((drug) => (
+                <li
+                  key={drug.key}
+                  className="rounded-sm border border-paper-2 bg-paper px-6 py-5 shadow-sm"
+                >
+                  <h3
+                    className="text-lg font-semibold text-ink"
+                    style={{ fontFamily: 'var(--font-heading)' }}
+                  >
+                    {drug.name[locale]}
+                  </h3>
+                  <ul className="mt-3 space-y-2">
+                    {drug.kararlar.map((k) => (
+                      <li key={k.slug}>
+                        <Link
+                          href={`/${locale}/kararlarimiz/${k.slug}`}
+                          className="text-sm text-slate transition-colors hover:text-gold-500"
+                        >
+                          {k.title}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
 
       {/* Kararlarımız — cross-link into the won-cases section */}
       <section className="bg-paper-2 py-[clamp(3rem,6vw,5rem)] px-6">
@@ -155,15 +215,12 @@ export default async function IlaclarPage({
             },
             mainEntity: {
               '@type': 'ItemList',
-              itemListElement: drugArticles.map((article, i) => {
-                const content = locale === 'en' ? article.en : article.tr
-                return {
-                  '@type': 'ListItem',
-                  position: i + 1,
-                  url: `${SITE_URL}/${locale}/yayinlar/${article.slug}`,
-                  name: content.title,
-                }
-              }),
+              itemListElement: allDrugs.map((drug, i) => ({
+                '@type': 'ListItem',
+                position: i + 1,
+                url: `${SITE_URL}${getDrugHref(drug, locale)}`,
+                name: drug.name[locale],
+              })),
             },
           }),
         }}

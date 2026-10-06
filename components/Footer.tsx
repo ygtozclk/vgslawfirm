@@ -16,6 +16,7 @@ export default function Footer({ locale, dict }: FooterProps) {
 
   const quickLinks = [
     { href: `/${locale}`, label: nav.home },
+    { href: `/${locale}/sgk-ilac-davasi`, label: nav.sgkIlacDavasi },
     { href: `/${locale}/hakkimizda`, label: nav.about },
     { href: `/${locale}/calisma-alanlari`, label: nav.practiceAreas },
     { href: `/${locale}/ekibimiz`, label: nav.team },

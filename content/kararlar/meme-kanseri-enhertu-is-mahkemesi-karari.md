@@ -3,6 +3,7 @@ title: "Meme Kanseri - ENHERTU (Trastuzumab Deruxtecan) İçin Kazandığımız 
 description: "Meme malign neoplazmı tanılı davacının Trastuzumab Deruxtecan/ENHERTU ilaç bedelinin SGK tarafından karşılanmasına ilişkin iş mahkemesi gerekçeli kararı."
 category: "SGK İlaç Davası — Kazanılan Dava"
 slug: "meme-kanseri-enhertu-is-mahkemesi-karari"
+summary: ""
 ---
 
 # Meme Kanseri - ENHERTU (Trastuzumab Deruxtecan) İçin Kazandığımız Davanın Sonucu (İş Mahkemesi)

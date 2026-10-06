@@ -5,9 +5,12 @@ import { getDictionary, hasLocale } from '@/lib/i18n'
 import type { Locale } from '@/lib/i18n'
 import { practiceAreas } from '@/content/practice-areas'
 import { getAllIctihat } from '@/content/ictihat'
-import { getDrugNames } from '@/content/articles'
+import { getAllKararlar } from '@/content/kararlar'
+import { getDrugLinks, getDrugNames } from '@/content/drugs'
 import PracticeAreaCard from '@/components/PracticeAreaCard'
 import IctihatCard from '@/components/IctihatCard'
+import KararCard from '@/components/KararCard'
+import DrugLinkList from '@/components/DrugLinkList'
 import PullQuote from '@/components/PullQuote'
 import SectionHeader from '@/components/SectionHeader'
 import CTASection from '@/components/CTASection'
@@ -23,15 +26,15 @@ export async function generateMetadata({
   const locale = lang as Locale
   const dict = await getDictionary(locale)
 
-  // Drug names are pulled live from content/articles.ts (via drugName) so the
-  // homepage title/description pick up every published drug article — and
-  // only those — without ever needing a manual edit here.
+  // Drug names are pulled live from content/drugs.ts (drug articles + kararlar,
+  // ordered by search volume) so the homepage title/description pick up every
+  // published drug without ever needing a manual edit here.
   const drugNames = getDrugNames(locale)
   const drugList = drugNames.join(', ')
 
   const title = locale === 'en'
-    ? `${dict.meta.siteTitle} | SGK Drug Reimbursement Lawsuit — ${drugList}`
-    : `${dict.meta.siteTitle} | SGK İlaç Davası — ${drugList}`
+    ? `VGS Hukuk | SGK Drug Reimbursement Lawsuit — ${drugList}`
+    : `VGS Hukuk | SGK İlaç Davası — ${drugList}`
 
   const description = locale === 'en'
     ? `Legal counsel for SGK reimbursement disputes over targeted cancer drugs including ${drugList}.`
@@ -61,6 +64,8 @@ export default async function HomePage({
   const dict = await getDictionary(locale)
   const d = dict.home
   const recentIctihat = getAllIctihat().slice(0, 3)
+  const recentKararlar = getAllKararlar().slice(0, 6)
+  const drugLinks = getDrugLinks(locale)
 
   const areaLabels = practiceAreas.map((a) =>
     locale === 'en' ? a.en.title : a.tr.title
@@ -168,6 +173,77 @@ export default async function HomePage({
           </FadeIn>
         </div>
       </section>
+
+      {/* ── Takip Ettiğimiz Davalardan Kararlar ── */}
+      {recentKararlar.length > 0 && (
+        <section
+          className="bg-paper-2 px-6 py-[clamp(4rem,8vw,7rem)]"
+          aria-labelledby="home-kararlar-heading"
+        >
+          <div className="mx-auto max-w-6xl">
+            <FadeIn>
+              <div className="mb-10 flex flex-wrap items-end justify-between gap-4">
+                <h2
+                  id="home-kararlar-heading"
+                  className="text-h2 font-semibold text-ink leading-tight"
+                  style={{ fontFamily: 'var(--font-heading)' }}
+                >
+                  {d.kararlarHeading}
+                </h2>
+                <Link
+                  href={`/${locale}/kararlarimiz`}
+                  className="inline-flex items-center gap-1.5 text-sm font-medium text-gold-500 transition-colors hover:text-gold-300"
+                >
+                  {d.kararlarAll}
+                  <svg
+                    className="h-4 w-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                    aria-hidden="true"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </Link>
+              </div>
+            </FadeIn>
+            <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {recentKararlar.map((karar, i) => (
+                <FadeIn key={karar.slug} delay={i * 80}>
+                  <KararCard
+                    karar={karar}
+                    locale={locale}
+                    readMoreLabel={dict.kararlarimiz.readMore}
+                  />
+                </FadeIn>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* ── Dava Takip Ettiğimiz İlaçlar ── */}
+      {drugLinks.length > 0 && (
+        <section
+          className="bg-paper px-6 py-[clamp(4rem,8vw,7rem)]"
+          aria-labelledby="home-drugs-heading"
+        >
+          <div className="mx-auto max-w-6xl">
+            <FadeIn>
+              <div className="mb-10">
+                <SectionHeader
+                  id="home-drugs-heading"
+                  heading={d.drugsHeading}
+                  subheading={d.drugsSub}
+                  align="left"
+                />
+              </div>
+              <DrugLinkList drugs={drugLinks} locale={locale} />
+            </FadeIn>
+          </div>
+        </section>
+      )}
 
       {/* ── Çalışma Alanları ── */}
       <section

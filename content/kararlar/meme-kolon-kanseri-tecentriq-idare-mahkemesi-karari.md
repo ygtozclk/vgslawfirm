@@ -3,6 +3,7 @@ title: "Meme ve Kolon Kanseri - TECENTRİQ (Atezolizumab) İçin Kazandığımı
 description: "Meme ve kolon malign neoplazmı tanılı davacının Atezolizumab/TECENTRİQ ilaç bedelinin SGK tarafından karşılanmasına ilişkin idare mahkemesi esas kararı."
 category: "SGK İlaç Davası — Kazanılan Dava"
 slug: "meme-kolon-kanseri-tecentriq-idare-mahkemesi-karari"
+summary: ""
 ---
 
 # Meme ve Kolon Kanseri - TECENTRİQ (Atezolizumab) İçin Kazandığımız Davanın Sonucu

@@ -6,6 +6,9 @@ export interface Karar {
   slug: string
   title: string
   description: string
+  // Optional plain-language summary shown above the decision text ("Bu Karar
+  // Ne Anlama Geliyor?"). Empty string -> box not rendered.
+  summary: string
   category: string
   mahkemeTuru: string
   ilacAdi: string
@@ -99,6 +102,7 @@ function readKarar(filePath: string, slugFromFile: string): Karar {
     slug,
     title,
     description: fm.description || '',
+    summary: fm.summary || '',
     category: fm.category || '',
     mahkemeTuru: extractMahkemeTuru(slug),
     ilacAdi,

@@ -5,9 +5,12 @@ import { getDictionary, hasLocale } from '@/lib/i18n'
 import type { Locale } from '@/lib/i18n'
 import { getAllKararlar, getKararBySlug } from '@/content/kararlar'
 import { getArticleForDrug } from '@/content/articles'
+import { getRelatedKararlar } from '@/content/drugs'
+import { site } from '@/lib/site'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import ReadingProgress from '@/components/ReadingProgress'
 import KararBody from '@/components/KararBody'
+import KararCard from '@/components/KararCard'
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.vgshukuk.com'
 
@@ -78,7 +81,15 @@ export default async function KararDetailPage({
       : relatedArticle.tr
     : undefined
 
+  const relatedKararlar = getRelatedKararlar(karar)
+
   const labels = {
+    summaryHeading: tr ? 'Bu Karar Ne Anlama Geliyor?' : 'What Does This Decision Mean?',
+    ctaText: tr
+      ? 'Benzer bir durumla karşı karşıyaysanız bizimle iletişime geçin.'
+      : 'If you are facing a similar situation, get in touch with us.',
+    ctaContact: tr ? 'İletişim Sayfası' : 'Contact Page',
+    relatedKararlarHeading: tr ? 'İlgili Kararlar' : 'Related Decisions',
     back: tr ? 'Emsal Kararlara Dön' : 'Back to Precedent Decisions',
     relatedArticleHeading: tr ? 'İlgili Hukuki Rehber' : 'Related Legal Guide',
     ilaclarHubLabel: tr ? 'Tüm SGK İlaç Davaları Rehberini İncele' : 'Browse All SGK Drug Litigation Guides',
@@ -148,7 +159,47 @@ export default async function KararDetailPage({
             </p>
           </aside>
 
+          {karar.summary && (
+            <section
+              className="rounded-sm border border-gold-500/40 bg-night-900 px-6 py-6 md:px-8"
+              aria-labelledby="karar-summary-heading"
+            >
+              <h2
+                id="karar-summary-heading"
+                className="text-h3 font-semibold text-gold-500"
+                style={{ fontFamily: 'var(--font-heading)' }}
+              >
+                {labels.summaryHeading}
+              </h2>
+              <p className="mt-3 text-body text-paper/90 leading-relaxed whitespace-pre-line">
+                {karar.summary}
+              </p>
+            </section>
+          )}
+
           <KararBody body={karar.body} mahkemeTuru={karar.mahkemeTuru} />
+
+          {/* Contact CTA */}
+          <aside
+            className="flex flex-col gap-5 rounded-sm bg-paper-2 px-6 py-6 sm:flex-row sm:items-center sm:justify-between md:px-8"
+            aria-label={labels.ctaContact}
+          >
+            <p className="text-body font-medium text-ink leading-relaxed">{labels.ctaText}</p>
+            <div className="flex flex-shrink-0 flex-wrap gap-3">
+              <Link
+                href={`/${locale}/iletisim`}
+                className="inline-flex items-center rounded-sm bg-gold-500 px-5 py-2.5 text-sm font-semibold text-night-900 transition-colors hover:bg-gold-300"
+              >
+                {labels.ctaContact}
+              </Link>
+              <a
+                href={`tel:${site.phone.replace(/\s/g, '')}`}
+                className="inline-flex items-center rounded-sm border border-night-900/20 px-5 py-2.5 text-sm font-semibold text-ink transition-colors hover:border-gold-500 hover:text-gold-500"
+              >
+                {site.phone}
+              </a>
+            </div>
+          </aside>
 
           {/* Related legal guide — links to the matching drug article when one
               exists, otherwise to the /ilaclar hub */}
@@ -175,6 +226,22 @@ export default async function KararDetailPage({
               </Link>
             )}
           </section>
+
+          {relatedKararlar.length > 0 && (
+            <section aria-labelledby="related-kararlar-heading">
+              <h2
+                id="related-kararlar-heading"
+                className="mb-4 text-xs font-semibold uppercase tracking-widest text-gold-500"
+              >
+                {labels.relatedKararlarHeading}
+              </h2>
+              <div className="grid gap-5 sm:grid-cols-2">
+                {relatedKararlar.map((k) => (
+                  <KararCard key={k.slug} karar={k} locale={locale} readMoreLabel={d.readMore} />
+                ))}
+              </div>
+            </section>
+          )}
 
           {/* Legal disclaimer */}
           <aside

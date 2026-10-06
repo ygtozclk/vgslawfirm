@@ -3,6 +3,7 @@ title: "Meme Kanseri - ENHERTU (Trastuzumab Deruxtecan) Hakkında Verilen İhtiy
 description: "Meme kanseri tanılı davacının Trastuzumab Deruxtecan/ENHERTU 100 mg ilaç bedelinin ön inceleme duruşmasına kadar SGK tarafından tedbiren karşılanmasına ilişkin iş mahkemesi ara kararı."
 category: "SGK İlaç Davası — Kazanılan Dava"
 slug: "meme-kanseri-enhertu-is-mahkemesi-karari-2"
+summary: ""
 ---
 
 # Meme Kanseri - ENHERTU (Trastuzumab Deruxtecan) Hakkında Verilen İhtiyati Tedbir Kararı

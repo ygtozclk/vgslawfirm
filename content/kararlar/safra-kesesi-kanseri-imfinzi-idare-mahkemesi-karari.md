@@ -3,6 +3,7 @@ title: "Safra Kesesi Kanseri - IMFINZI (Durvalumab) İçin Kazandığımız Dava
 description: "Safra kesesi malign neoplazmı tanılı, vefatı sonrası mirasçıları tarafından sürdürülen davada Durvalumab/IMFINZI ilaç bedelinin SGK'ca karşılanmasına ilişkin idare mahkemesi kararı."
 category: "SGK İlaç Davası — Kazanılan Dava"
 slug: "safra-kesesi-kanseri-imfinzi-idare-mahkemesi-karari"
+summary: ""
 ---
 
 # Safra Kesesi Kanseri - IMFINZI (Durvalumab) İçin Kazandığımız Davanın Sonucu

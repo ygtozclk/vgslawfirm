@@ -3,6 +3,7 @@ title: "Meme Kanseri - KEYTRUDA (Pembrolizumab) İçin Kazandığımız Davanın
 description: "Meme kanseri tedavisi gören davacının Pembrolizumab etken maddeli KEYTRUDA isimli ilaç bedelinin SGK tarafından karşılanmasına ilişkin idare mahkemesi kararı."
 category: "SGK İlaç Davası — Kazanılan Dava"
 slug: "meme-kanseri-keytruda-idare-mahkemesi-karari"
+summary: ""
 ---
 
 # Meme Kanseri - KEYTRUDA (Pembrolizumab) İçin Kazandığımız Davanın Sonucu

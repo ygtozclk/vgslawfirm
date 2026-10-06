@@ -3,6 +3,7 @@ title: "Akciğer Kanseri - IMFINZI (Durvalumab) İçin Kazandığımız Davanın
 description: "Toraks sınırlı küçük hücreli akciğer kanseri tanılı davacının Durvalumab/IMFINZI ilaç bedelinin SGK tarafından karşılanmasına ilişkin iş mahkemesi gerekçeli kararı."
 category: "SGK İlaç Davası — Kazanılan Dava"
 slug: "akciger-kanseri-imfinzi-is-mahkemesi-karari"
+summary: ""
 ---
 
 # Akciğer Kanseri - IMFINZI (Durvalumab) İçin Kazandığımız Davanın Sonucu (İş Mahkemesi)

@@ -3,6 +3,7 @@ title: "Mesane Kanseri - PADCEV Hakkında Verilen Yürütmenin Durdurulması Kar
 description: "Mesane malign neoplazmı tanılı davacının PADCEV isimli ilaç bedelinin SGK tarafından karşılanması istemiyle açılan davada verilen yürütmenin durdurulması kararı."
 category: "SGK İlaç Davası — Kazanılan Dava"
 slug: "mesane-kanseri-padcev-idare-mahkemesi-karari"
+summary: ""
 ---
 
 # Mesane Kanseri - PADCEV Hakkında Verilen Yürütmenin Durdurulması Kararı

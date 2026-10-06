@@ -6,12 +6,13 @@
     "team": "Ekibimiz",
     "publications": "Yayınlar",
     "contact": "İletişim",
-    "cta": "Görüşme Talep Et"
+    "cta": "Görüşme Talep Et",
+    "sgkIlacDavasi": "SGK İlaç Davası"
   },
   "home": {
     "heroEyebrow": "ANKARA · HUKUKİ DANIŞMANLIK",
-    "heroHeading": "Kurumsal hizmet anlayışıyla hukuki çözümler",
-    "heroSub": "Özel hukuk, kamu hukuku, ceza hukuku ve KVKK alanlarında danışmanlık.",
+    "heroHeading": "SGK'nın Karşılamadığı Kanser İlaçları İçin Hukuki Destek",
+    "heroSub": "Akıllı kanser ilaçlarının SGK tarafından karşılanması için idare ve iş mahkemelerinde dava ve ihtiyati tedbir süreçlerini takip ediyoruz.",
     "heroCta": "İletişim",
     "heroCtaSecondary": "Çalışma Alanları",
     "introHeading": "Hukuki meselelerde kurumsal ve sonuç odaklı hizmet",
@@ -24,7 +25,11 @@
     "recentDecisionsHeading": "Güncel Yargı Kararları",
     "ctaHeading": "Hukuki konularda bilgi için iletişime geçebilirsiniz.",
     "ctaSub": "Sorularınız için adres, telefon ve e-posta bilgilerimize iletişim sayfamızdan ulaşabilirsiniz.",
-    "ctaButton": "İletişim Bilgileri"
+    "ctaButton": "İletişim Bilgileri",
+    "kararlarHeading": "Takip Ettiğimiz Davalardan Kararlar",
+    "kararlarAll": "Tüm Kararlar",
+    "drugsHeading": "Dava Takip Ettiğimiz İlaçlar",
+    "drugsSub": "Her ilaç, ilgili hukuki rehbere veya mahkeme kararına bağlantı verir."
   },
   "about": {
     "heading": "Hakkımızda",
@@ -146,7 +151,7 @@
     "heading": "Emsal Kararlar",
     "sub": "VGS Hukuk & Danışmanlık'ın takip ettiği SGK ilaç davalarına ait anonimleştirilmiş resmi mahkeme kararları.",
     "seoTitle": "Emsal Kararlar — SGK İlaç Davası Kararları",
-    "seoDescription": "VGS Hukuk & Danışmanlık'ın takip ettiği ve kazandığı SGK ilaç davalarına ait anonimleştirilmiş resmi mahkeme kararları. İdare ve iş mahkemesi kararları.",
+    "seoDescription": "VGS Hukuk & Danışmanlık'ın takip ettiği SGK ilaç davalarına ait anonimleştirilmiş resmi mahkeme kararları. İdare ve iş mahkemesi kararları.",
     "readMore": "Kararı İncele",
     "relatedDecisions": "Emsal Kararlar",
     "allDecisions": "Tüm Kararlar",

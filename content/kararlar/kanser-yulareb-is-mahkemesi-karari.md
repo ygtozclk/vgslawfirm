@@ -3,6 +3,7 @@ title: "Kanser Tedavisi - YULAREB Hakkında Verilen İhtiyati Tedbir Kararı"
 description: "Kanser tedavisi gören davacı lehine sağlık kurulu raporuna dayanılarak YULAREB isimli ilacın bedelinin SGK tarafından tedbiren karşılanmasına ilişkin iş mahkemesi ihtiyati tedbir kararı."
 category: "SGK İlaç Davası — Kazanılan Dava"
 slug: "kanser-yulareb-is-mahkemesi-karari"
+summary: ""
 ---
 
 # Kanser Tedavisi - YULAREB Hakkında Verilen İhtiyati Tedbir Kararı

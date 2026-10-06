@@ -6,12 +6,13 @@
     "team": "Our Team",
     "publications": "Publications",
     "contact": "Contact",
-    "cta": "Request a Consultation"
+    "cta": "Request a Consultation",
+    "sgkIlacDavasi": "SGK Drug Lawsuit"
   },
   "home": {
     "heroEyebrow": "ANKARA · LEGAL CONSULTANCY",
-    "heroHeading": "Legal solutions with a corporate service approach",
-    "heroSub": "Legal consultancy in private law, public law, criminal law, and data protection.",
+    "heroHeading": "Legal Support for Cancer Drugs Not Covered by SGK",
+    "heroSub": "We handle lawsuits and interim injunction proceedings before administrative and labour courts to have targeted cancer drugs covered by SGK.",
     "heroCta": "Contact",
     "heroCtaSecondary": "Practice Areas",
     "introHeading": "Corporate and results-oriented legal service",
@@ -24,7 +25,11 @@
     "recentDecisionsHeading": "Recent Court Decisions",
     "ctaHeading": "For legal information, please get in touch.",
     "ctaSub": "You can find our address, telephone and email on the contact page.",
-    "ctaButton": "Contact Information"
+    "ctaButton": "Contact Information",
+    "kararlarHeading": "Decisions From Cases We Handle",
+    "kararlarAll": "All Decisions",
+    "drugsHeading": "Drugs We Litigate For",
+    "drugsSub": "Each drug links to the related legal guide or court decision."
   },
   "about": {
     "heading": "About Us",
@@ -144,9 +149,9 @@
   },
   "kararlarimiz": {
     "heading": "Precedent Decisions",
-    "sub": "Anonymised official court decisions from SGK drug reimbursement cases handled and won by VGS Hukuk & Danışmanlık.",
+    "sub": "Anonymised official court decisions from SGK drug reimbursement cases handled by VGS Hukuk & Danışmanlık.",
     "seoTitle": "Precedent Decisions — SGK Drug Litigation Decisions",
-    "seoDescription": "Anonymised official court decisions from SGK drug reimbursement cases handled and won by VGS Hukuk & Danışmanlık. Administrative and labour court rulings.",
+    "seoDescription": "Anonymised official court decisions from SGK drug reimbursement cases handled by VGS Hukuk & Danışmanlık. Administrative and labour court rulings.",
     "readMore": "View Decision",
     "relatedDecisions": "Precedent Decisions",
     "allDecisions": "All Decisions",

@@ -1468,17 +1468,13 @@ export function getAllCategories(): string[] {
   return Array.from(cats)
 }
 
-// Articles that cover a specific named drug — backs the dynamic homepage
-// title/description and the /ilaclar hub page. A new drug article picks
+// Articles that cover a specific named drug — merged with kararlar drugs in
+// content/drugs.ts for the homepage title and the /ilaclar hub page. A new drug article picks
 // this up automatically the moment `drugName` is set above.
 type DrugArticle = Article & { drugName: NonNullable<Article['drugName']> }
 
 export function getDrugArticles(): DrugArticle[] {
   return articles.filter((a): a is DrugArticle => Boolean(a.drugName))
-}
-
-export function getDrugNames(locale: 'tr' | 'en'): string[] {
-  return getDrugArticles().map((a) => (locale === 'en' ? a.drugName.en : a.drugName.tr))
 }
 
 // Finds the drug article matching a karar's ilaçAdı/etkenMadde (e.g. karar

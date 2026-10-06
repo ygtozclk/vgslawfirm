@@ -29,6 +29,7 @@ export default function MobileNav({ locale, dict }: MobileNavProps) {
 
   const links = [
     { href: `/${locale}`, label: dict.home },
+    { href: `/${locale}/sgk-ilac-davasi`, label: dict.sgkIlacDavasi },
     { href: `/${locale}/hakkimizda`, label: dict.about },
     { href: `/${locale}/calisma-alanlari`, label: dict.practiceAreas },
     { href: `/${locale}/ekibimiz`, label: dict.team },

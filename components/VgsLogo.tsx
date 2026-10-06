@@ -4,13 +4,13 @@ interface VgsLogoProps {
   panel?: string
   /** Panel içi harf rengi */
   letter?: string
-  /** "LAW FIRM" satırının rengi; PNG'deki siyah koyu zeminde kaybolduğu için renk dışarıdan verilir */
+  /** "HUKUK" satırının rengi; PNG'deki siyah koyu zeminde kaybolduğu için renk dışarıdan verilir */
   wordmark?: string
 }
 
 /**
  * VGS logosunun vektörel yeniden çizimi: üç mürdüm panel, serif V·G·S,
- * altta harf aralıklı LAW FIRM. Orijinal PNG (2000×2000, kare) yerine
+ * altta harf aralıklı HUKUK. Orijinal PNG (2000×2000, kare) yerine
  * sıkı kadrajlı bir lockup — her boyutta keskin, her zeminde okunur.
  */
 export default function VgsLogo({
@@ -27,6 +27,7 @@ export default function VgsLogo({
       aria-label="VGS Hukuk & Danışmanlık"
       xmlns="http://www.w3.org/2000/svg"
     >
+      <title>VGS Hukuk</title>
       <rect x="6" y="6" width="88" height="212" fill={panel} />
       <rect x="106" y="6" width="88" height="212" fill={panel} />
       <rect x="206" y="6" width="88" height="212" fill={panel} />
@@ -52,10 +53,10 @@ export default function VgsLogo({
           fontFamily: 'var(--font-sans), system-ui, sans-serif',
           fontWeight: 500,
           fontSize: '21px',
-          letterSpacing: '0.42em',
+          letterSpacing: '0.7em',
         }}
       >
-        LAW FIRM
+        HUKUK
       </text>
     </svg>
   )

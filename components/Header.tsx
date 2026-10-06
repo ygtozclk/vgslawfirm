@@ -77,6 +77,14 @@ export default function Header({ locale, dict }: HeaderProps) {
             {dict.home}
           </Link>
           <Link
+            href={`/${locale}/sgk-ilac-davasi`}
+            className={`rounded-sm px-3 py-2 text-sm transition-colors ${
+              isActive(`/${locale}/sgk-ilac-davasi`) ? 'text-gold-500' : 'text-paper/80 hover:text-paper'
+            }`}
+          >
+            {dict.sgkIlacDavasi}
+          </Link>
+          <Link
             href={`/${locale}/hakkimizda`}
             className={`rounded-sm px-3 py-2 text-sm transition-colors ${
               isActive(`/${locale}/hakkimizda`) ? 'text-gold-500' : 'text-paper/80 hover:text-paper'
