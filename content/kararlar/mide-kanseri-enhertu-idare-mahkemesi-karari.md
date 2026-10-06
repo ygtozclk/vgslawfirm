@@ -3,7 +3,7 @@ title: "Mide Kanseri - ENHERTU (Trastuzumab Deruxtecan) Hakkında Verilen Yürü
 description: "Mide kanseri tedavisi gören davacının Trastuzumab Deruxtecan/ENHERTU ilaç bedelinin SGK tarafından karşılanması istemiyle açılan davada verilen yürütmenin durdurulması kararı."
 category: "SGK İlaç Davası — Kazanılan Dava"
 slug: "mide-kanseri-enhertu-idare-mahkemesi-karari"
-summary: ""
+summary: "Mide kanseri tanılı davacının Trastuzumab Deruxtecan etken maddeli ENHERTU isimli ilacın bedelinin karşılanması talebi reddedilmiştir. İdare Mahkemesi, dava konusu işlemin hukuka aykırılığının açık olduğunu ve uygulanması halinde telafisi güç zararlar doğabileceğini değerlendirerek teminatsız olarak yürütmesinin durdurulmasına karar vermiştir. Bu bir ara karardır; davanın esası bu karar tarihi itibarıyla sonuçlanmamıştır."
 ---
 
 # Mide Kanseri - ENHERTU (Trastuzumab Deruxtecan) Hakkında Verilen Yürütmenin Durdurulması Kararı

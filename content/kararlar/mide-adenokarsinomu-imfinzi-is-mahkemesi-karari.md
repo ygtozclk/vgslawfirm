@@ -3,7 +3,7 @@ title: "Mide Adenokarsinomu - IMFINZI (Durvalumab) Hakkında Verilen İhtiyati T
 description: "Mide adenokarsinomu tanılı davacının Durvalumab/IMFINZI 500 mg/10 ml ilaç bedelinin talep tarihinden itibaren 6 ay süreyle SGK tarafından tedbiren karşılanmasına ilişkin iş mahkemesi ara kararı."
 category: "SGK İlaç Davası — Kazanılan Dava"
 slug: "mide-adenokarsinomu-imfinzi-is-mahkemesi-karari"
-summary: ""
+summary: "Mide adenokarsinomu tanılı davacının tedavisinde kullanılan Durvalumab etken maddeli IMFINZI 500 mg/10 ml isimli ilacın bedelinin karşılanması talebi reddedilmiştir. Ankara 27. İş Mahkemesi, sunulan tedavi evrakları ile yaklaşık ispat koşulunun sağlandığını değerlendirerek ilaç bedelinin talep tarihinden itibaren 6 ay süreyle SGK tarafından karşılanmasına teminatsız ihtiyati tedbir kararı vermiştir. Bu bir ara karardır; davanın esası bu karar tarihi itibarıyla sonuçlanmamıştır."
 ---
 
 # Mide Adenokarsinomu - IMFINZI (Durvalumab) Hakkında Verilen İhtiyati Tedbir Kararı

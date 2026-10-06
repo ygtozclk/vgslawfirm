@@ -6,7 +6,7 @@ import type { Locale } from '@/lib/i18n'
 import { getAllKararlar } from '@/content/kararlar'
 import { getAllIctihat } from '@/content/ictihat'
 import { getDrugLinks } from '@/content/drugs'
-import { pillarFaq, pillarSections } from '@/content/sgk-ilac-davasi'
+import { pillarFaq, pillarIntro, pillarNote, pillarSections } from '@/content/sgk-ilac-davasi'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import DrugLinkList from '@/components/DrugLinkList'
 import KararCard from '@/components/KararCard'
@@ -78,18 +78,62 @@ export async function generateMetadata({
   }
 }
 
-function Paragraphs({ text }: { text: string }) {
+// **bold** -> <strong>
+function Inline({ text }: { text: string }) {
   return (
     <>
-      {text
-        .split(/\n\s*\n/)
-        .map((p) => p.trim())
-        .filter(Boolean)
-        .map((p, i) => (
+      {text.split(/(\*\*[^*]+\*\*)/).map((part, i) =>
+        part.startsWith('**') && part.endsWith('**') ? (
+          <strong key={i} className="font-semibold text-ink">
+            {part.slice(2, -2)}
+          </strong>
+        ) : (
+          part
+        )
+      )}
+    </>
+  )
+}
+
+// Renders the minimal markup used in content/sgk-ilac-davasi.ts: blank-line
+// separated blocks; "1. " lines -> <ol>, "- " lines -> <ul>, else <p>.
+function RichText({ text }: { text: string }) {
+  const blocks = text
+    .split(/\n\s*\n/)
+    .map((b) => b.trim())
+    .filter(Boolean)
+  return (
+    <>
+      {blocks.map((block, i) => {
+        const lines = block.split('\n').map((l) => l.trim())
+        if (lines.every((l) => /^\d+\.\s/.test(l))) {
+          return (
+            <ol key={i} className="mt-4 list-decimal space-y-3 pl-6 text-body text-slate leading-relaxed marker:font-semibold marker:text-gold-500">
+              {lines.map((l, j) => (
+                <li key={j}>
+                  <Inline text={l.replace(/^\d+\.\s+/, '')} />
+                </li>
+              ))}
+            </ol>
+          )
+        }
+        if (lines.every((l) => l.startsWith('- '))) {
+          return (
+            <ul key={i} className="mt-4 list-disc space-y-2 pl-6 text-body text-slate leading-relaxed marker:text-gold-500">
+              {lines.map((l, j) => (
+                <li key={j}>
+                  <Inline text={l.slice(2)} />
+                </li>
+              ))}
+            </ul>
+          )
+        }
+        return (
           <p key={i} className="mt-4 text-body text-slate leading-relaxed whitespace-pre-line">
-            {p}
+            <Inline text={block} />
           </p>
-        ))}
+        )
+      })}
     </>
   )
 }
@@ -145,7 +189,7 @@ export default async function SgkIlacDavasiPage({
           >
             {c.heading}
           </h1>
-          <p className="mt-4 max-w-2xl text-body text-mist-2 leading-relaxed">{c.sub}</p>
+          <p className="mt-4 max-w-3xl text-body text-mist-2 leading-relaxed">{pillarIntro[locale] || c.sub}</p>
         </div>
       </section>
 
@@ -162,7 +206,7 @@ export default async function SgkIlacDavasiPage({
                 >
                   {s.heading[locale]}
                 </h2>
-                <Paragraphs text={s.body[locale]} />
+                <RichText text={s.body[locale]} />
               </section>
             ))}
           </div>
@@ -246,11 +290,22 @@ export default async function SgkIlacDavasiPage({
                   <summary className="cursor-pointer list-none text-lg font-semibold text-ink group-open:text-gold-500">
                     {f.question[locale]}
                   </summary>
-                  <Paragraphs text={f.answer[locale]} />
+                  <RichText text={f.answer[locale]} />
                 </details>
               ))}
             </div>
           </div>
+        </section>
+      )}
+
+      {pillarNote[locale] && (
+        <section className="bg-paper px-6 pb-[clamp(3rem,6vw,5rem)]">
+          <aside
+            className="mx-auto max-w-4xl rounded-sm border border-paper-2 bg-paper-2 px-6 py-5"
+            aria-label={locale === 'en' ? 'Legal notice' : 'Yasal uyarı'}
+          >
+            <p className="text-sm text-slate leading-relaxed">{pillarNote[locale]}</p>
+          </aside>
         </section>
       )}
 

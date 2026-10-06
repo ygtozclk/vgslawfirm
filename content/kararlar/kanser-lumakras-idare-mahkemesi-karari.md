@@ -3,7 +3,7 @@ title: "Kanser Tedavisi - LUMAKRAS (Sotorasib) Hakkında Verilen Yürütmenin Du
 description: "Kanser tedavisi gören davacının Sotorasib etken maddeli LUMAKRAS isimli ilaç bedelinin SGK tarafından karşılanması istemiyle açılan davada verilen yürütmenin durdurulması kararı."
 category: "SGK İlaç Davası — Kazanılan Dava"
 slug: "kanser-lumakras-idare-mahkemesi-karari"
-summary: ""
+summary: "Kanser tedavisi gören davacının Sotorasib etken maddeli LUMAKRAS isimli ilacın bedelinin kesintisiz karşılanması talebi SGK tarafından reddedilmiştir. Ankara 2. İdare Mahkemesi, işlemin hukuka aykırılığının açık olduğunu ve uygulanması halinde telafisi güç zararlar doğabileceğini değerlendirerek teminatsız olarak yürütmesinin durdurulmasına karar vermiştir. Bu bir ara karardır; davanın esası bu karar tarihi itibarıyla sonuçlanmamıştır."
 ---
 
 # Kanser Tedavisi - LUMAKRAS (Sotorasib) Hakkında Verilen Yürütmenin Durdurulması Kararı

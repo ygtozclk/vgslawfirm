@@ -3,7 +3,7 @@ title: "Adenoid Kistik Karsinom - ENHERTU (Trastuzumab Deruxtecan) Hakkında Ver
 description: "Adenoid kistik karsinom tanılı davacının Trastuzumab Deruxtecan/ENHERTU 100 mg ilaç bedelinin SGK tarafından tedbiren karşılanmasına ilişkin Ankara 87. İş Mahkemesi ihtiyati tedbir kararı."
 category: "SGK İlaç Davası — Kazanılan Dava"
 slug: "adenoid-kistik-karsinom-enhertu-is-mahkemesi-karari"
-summary: ""
+summary: "Adenoid kistik karsinom tanılı davacı için hekimleri tarafından hayati önemde olduğu ve muadilinin bulunmadığı bildirilen Trastuzumab Deruxtecan etken maddeli ENHERTU 100 mg isimli ilacın bedelinin karşılanması talep edilmiştir. Ankara 87. İş Mahkemesi, dava açıldıktan bir gün sonra verdiği kararla ilacın 6 ay süreyle SGK tarafından kesintisiz karşılanmasına teminatsız ihtiyati tedbir kararı vermiştir. Bu bir ara karardır; davanın esası bu karar tarihi itibarıyla sonuçlanmamıştır."
 ---
 
 # Adenoid Kistik Karsinom - ENHERTU (Trastuzumab Deruxtecan) Hakkında Verilen İhtiyati Tedbir Kararı

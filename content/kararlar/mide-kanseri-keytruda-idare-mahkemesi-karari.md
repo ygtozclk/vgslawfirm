@@ -3,7 +3,7 @@ title: "Mide Kanseri - KEYTRUDA (Pembrolizumab) İçin Kazandığımız Davanın
 description: "Mide malign neoplazmı tanılı davacının Pembrolizumab/KEYTRUDA ilaç bedelinin SGK tarafından karşılanmasına ilişkin idare mahkemesi kararı."
 category: "SGK İlaç Davası — Kazanılan Dava"
 slug: "mide-kanseri-keytruda-idare-mahkemesi-karari"
-summary: ""
+summary: "Mide kanseri tanılı davacının tedavisinde kullanılan Pembrolizumab etken maddeli KEYTRUDA isimli ilacın bedelinin karşılanması talebi reddedilmiş, davacı ilk kürleri kendi imkanlarıyla temin etmek zorunda kalmıştır. İdare Mahkemesi, işlemin iptaline ve davacının ödediği toplam 132.167,84 TL ilaç bedelinin idareye başvuru tarihinden itibaren yasal faiziyle iadesine karar vermiştir. Karar ilk derece kararı olup istinaf yolu açıktır."
 ---
 
 # Mide Kanseri - KEYTRUDA (Pembrolizumab) İçin Kazandığımız Davanın Sonucu

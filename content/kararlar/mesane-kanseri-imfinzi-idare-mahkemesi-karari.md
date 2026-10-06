@@ -3,7 +3,7 @@ title: "Mesane Kanseri - IMFINZI (Durvalumab) İçin Kazandığımız Davanın S
 description: "Mesane malign neoplazmı (ürotelyal karsinom) tanılı davacının Durvalumab etken maddeli IMFINZI isimli ilaç bedelinin SGK tarafından karşılanması davasında Ankara İdare Mahkemesi kararı."
 category: "SGK İlaç Davası — Kazanılan Dava"
 slug: "mesane-kanseri-imfinzi-idare-mahkemesi-karari"
-summary: ""
+summary: "Mesane kanseri (ürotelyal karsinom) tanılı davacının tedavisinde kullanılan Durvalumab etken maddeli IMFINZI isimli ilacın bedelinin karşılanması talebi SGK tarafından reddedilmiştir. Ankara 7. İdare Mahkemesi, ret işlemini iptal ederek ilaç bedellerinin tedavi süresince kesintisiz ödenmesine ve davacının ilaç için ödediği 261.008,55 TL'nin başvuru tarihinden itibaren yasal faiziyle iadesine karar vermiştir. Karar ilk derece kararı olup istinaf yolu açıktır."
 ---
 
 # Mesane Kanseri - IMFINZI (Durvalumab) İçin Kazandığımız Davanın Sonucu

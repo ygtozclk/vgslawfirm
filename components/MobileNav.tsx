@@ -14,9 +14,13 @@ export default function MobileNav({ locale, dict }: MobileNavProps) {
   const [open, setOpen] = useState(false)
   const pathname = usePathname()
 
-  useEffect(() => {
+  // Close the menu on route change — adjusted during render rather than in an
+  // effect (https://react.dev/learn/you-might-not-need-an-effect)
+  const [prevPathname, setPrevPathname] = useState(pathname)
+  if (pathname !== prevPathname) {
+    setPrevPathname(pathname)
     setOpen(false)
-  }, [pathname])
+  }
 
   useEffect(() => {
     if (open) {
@@ -40,7 +44,7 @@ export default function MobileNav({ locale, dict }: MobileNavProps) {
     },
     {
       href: `/${locale}/kararlarimiz`,
-      label: locale === 'en' ? "Cases We've Won" : 'Kararlarımız',
+      label: locale === 'en' ? 'Our Cases' : 'Kararlarımız',
     },
     { href: `/${locale}/iletisim`, label: dict.contact },
   ]

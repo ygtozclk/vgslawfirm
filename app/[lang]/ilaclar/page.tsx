@@ -63,8 +63,8 @@ export default async function IlaclarPage({
   const kararlarimizHeading = locale === 'en' ? 'Precedent Decisions' : 'Kararlarımız'
   const kararlarimizSub =
     locale === 'en'
-      ? `Anonymised official court decisions from ${kararSayisi} SGK drug reimbursement cases we've handled and won.`
-      : `Takip ettiğimiz ve kazandığımız ${kararSayisi} SGK ilaç davasına ait anonimleştirilmiş resmi mahkeme kararları.`
+      ? `Anonymised official court decisions from ${kararSayisi} SGK drug reimbursement cases we've handled.`
+      : `Takip ettiğimiz ${kararSayisi} SGK ilaç davasına ait anonimleştirilmiş resmi mahkeme kararları.`
   const kararlarimizCta = locale === 'en' ? 'View the Decisions' : 'Kararları İncele'
 
   const heading = locale === 'en' ? 'SGK Drug Reimbursement Lawsuits' : 'SGK İlaç Davası'

@@ -3,7 +3,7 @@ title: "Akciğer Kanseri - TECENTRİQ (Atezolizumab) İçin Kazandığımız Dav
 description: "Akciğer malign neoplazmı tanılı davacının Atezolizumab/TECENTRİQ ilaç bedelinin SGK tarafından karşılanmasına ilişkin idare mahkemesi kararı."
 category: "SGK İlaç Davası — Kazanılan Dava"
 slug: "akciger-kanseri-tecentriq-idare-mahkemesi-karari"
-summary: ""
+summary: "Akciğer kanseri tanılı davacının doktoru tarafından reçete edilen Atezolizumab etken maddeli TECENTRİQ isimli ilacın bedelinin ödenmesi talebi SGK tarafından reddedilmiştir. Ankara 6. İdare Mahkemesi, işlemin iptaline ve davacının ödediği 65.712,83 TL ilaç bedelinin yasal faiziyle iadesine karar vermiştir. Karar ilk derece kararı olup istinaf yolu açıktır."
 ---
 
 # Akciğer Kanseri - TECENTRİQ (Atezolizumab) İçin Kazandığımız Davanın Sonucu

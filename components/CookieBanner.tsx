@@ -17,6 +17,9 @@ export default function CookieBanner({ locale, dict }: CookieBannerProps) {
   useEffect(() => {
     try {
       const stored = localStorage.getItem(STORAGE_KEY)
+      // localStorage is only readable after hydration; reading it here keeps
+      // server and client markup identical, so this effect is intentional.
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       if (!stored) setVisible(true)
     } catch {
       // localStorage not available

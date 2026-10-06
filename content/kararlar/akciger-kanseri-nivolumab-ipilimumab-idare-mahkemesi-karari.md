@@ -3,7 +3,7 @@ title: "Akciğer Kanseri - Nivolumab ve İpilimumab İçin Kazandığımız Dava
 description: "Akciğer kanseri hastası emekli davacının Nivolumab ve İpilimumab etken maddeli ilaçların bedelinin SGK'ca karşılanmasına ilişkin idare mahkemesi kararı."
 category: "SGK İlaç Davası — Kazanılan Dava"
 slug: "akciger-kanseri-nivolumab-ipilimumab-idare-mahkemesi-karari"
-summary: ""
+summary: "Akciğer kanseri tanılı davacının tedavisinde hekimi tarafından önerilen Nivolumab ve İpilimumab etken maddeli ilaçların birlikte kullanımına ilişkin bedelin karşılanması talebi SGK tarafından reddedilmiştir. Ankara 5. İdare Mahkemesi, işlemin iptaline ve ilaç bedelinin başvuru tarihinden itibaren yasal faiziyle davacıya ödenmesine karar vermiştir. Karar, kombinasyon şeklinde kullanılan immünoterapi ilaçlarına ilişkin bir örnek olması bakımından önemlidir. Karar ilk derece kararı olup istinaf yolu açıktır."
 ---
 
 # Akciğer Kanseri - Nivolumab ve İpilimumab İçin Kazandığımız Davanın Sonucu

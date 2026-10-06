@@ -3,7 +3,7 @@ title: "Meme Kanseri - KEYTRUDA (Pembrolizumab) İçin Kazandığımız Davanın
 description: "Meme kanseri tedavisi gören davacının Pembrolizumab etken maddeli KEYTRUDA isimli ilaç bedelinin SGK tarafından karşılanmasına ilişkin idare mahkemesi kararı."
 category: "SGK İlaç Davası — Kazanılan Dava"
 slug: "meme-kanseri-keytruda-idare-mahkemesi-karari"
-summary: ""
+summary: "Meme kanseri tedavisi gören davacının Pembrolizumab etken maddeli KEYTRUDA isimli ilacın bedelinin karşılanması talebi SGK tarafından reddedilmiştir. Ankara 18. İdare Mahkemesi, ret işlemini iptal ederek ilaç bedellerinin ödenmesi istemini kabul etmiş ve davacının ilaç için harcadığı 200.002,00 TL'nin yasal faiziyle iadesine karar vermiştir. Karar ilk derece kararı olup istinaf yolu açıktır."
 ---
 
 # Meme Kanseri - KEYTRUDA (Pembrolizumab) İçin Kazandığımız Davanın Sonucu

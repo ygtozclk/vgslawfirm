@@ -163,7 +163,7 @@ export default function Header({ locale, dict }: HeaderProps) {
               isActive(`/${locale}/kararlarimiz`) ? 'text-gold-500' : 'text-paper/80 hover:text-paper'
             }`}
           >
-            {locale === 'en' ? "Cases We've Won" : 'Kararlarımız'}
+            {locale === 'en' ? 'Our Cases' : 'Kararlarımız'}
           </Link>
 
           <Link
